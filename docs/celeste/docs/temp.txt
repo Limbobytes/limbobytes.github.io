@@ -1,0 +1,699 @@
+2019更新：
+	新增章节：再见
+
+路标：
+	一个人
+	能源
+	铭记
+	视界线
+	决心
+	倔强
+	和谐
+	再见
+
+明信片：
+	哇，你成功了！现在可以从“文件选择”菜单访问异变。
+
+高亮项目：
+	奶奶
+	另一个她
+	另一个奶奶
+
+  Farewell 再见
+	墓碑：
+		MADELINE 右向 伤心表情
+		奶奶...
+		MADELINE 右向 更加伤心
+		真不敢相信你就这么走了，老太婆。
+		
+		MADELINE 右向 迷茫表情
+		好吧，这也没什么。
+		
+		MADELINE 右向 更加伤心
+		听起来就像你在寄给我的上一封信里说了再见。
+		
+		Madeline前行一步
+		
+		MADELINE 右向 更加伤心
+		这不公平。我需要你。
+		
+		MADELINE 右向 愤怒表情
+		你让我完全没有任何心里准备。
+		
+		{trigger 1 Badeline Appears}
+		
+		[BADELINE 右向 冷笑
+		你想让她干吗，道歉吗？
+		
+		[BADELINE 右向 upset]
+		她走了。
+		
+		[BADELINE 右向 angry]
+		而你甚至没有出席葬礼。
+		
+		{trigger 2 Sit Down}
+		
+		[MADELINE 右向 迷茫表情
+		我知道，我就是... 做不到。
+		
+		[MADELINE 右向 更加伤心
+		我感觉自己要崩溃了。
+		
+		[MADELINE 右向 更加伤心
+		对不起，{+GRANNY}。
+		
+		[BADELINE 右向 angry]
+		{~}说抱歉{/~}也不能让她回来。
+		
+		[MADELINE 右向 更加伤心
+		你说得对。
+		
+		[MADELINE 右向 伤心表情
+		我来这儿真是太自私了。
+
+	CH9_FLYING_TO_THE_MOON=
+		[BADELINE 左向 关心
+		我们要去哪儿，{+MADELINE}？
+		
+		[MADELINE 右向 伤心表情
+		我们必须跟着那只鸟。
+		它是{+PART_OF_GRANNY}，就像你是{+PART_OF_ME}。
+		
+		[BADELINE 左向 担忧
+		我还以为它只是她的宠物什么的...
+		
+		[MADELINE 右向 迷茫表情
+		它{~}肯定{/~}不止是宠物。
+		
+		[MADELINE 右向 伤心表情
+		那只鸟当时在{+MOUNTAIN}上一直照看着我{n}，就像{+GRANNY}一样。
+		
+		[BADELINE 左向 关心
+		{+MADELINE}...我讨厌这样说，但...
+		
+		[BADELINE 左向 worriedAlt]
+		你只是拒绝接受事实。
+		
+		[BADELINE 左向 担忧
+		它只是一只鸟。
+		
+		[MADELINE 右向 upset]
+		别说了，帮我一次行不行？
+
+	CH9_LANDING=
+		[BADELINE 右向 担忧
+		呃... 我们现在很高了。
+		
+		{trigger 0 Badeline turns}
+		
+		[BADELINE 右向 worriedAlt flip]
+		从这里看，那座山就像一个小丘了。
+		
+		{trigger 0 Badeline turns}
+		
+		[BADELINE 右向 担忧
+		我们真的该往回走了。
+		
+		[MADELINE 左向 upset]
+		我们没时间争论这个。
+		
+		[BADELINE 右向 关心
+		你在这上面呼吸怎么样？
+		
+		[MADELINE 左向 伤心表情
+		{+GRANNY} 希望我们跟着她。
+		
+		[MADELINE 左向 迷茫表情
+		我们不能再让她失望了。
+		
+		[BADELINE 右向 angryAlt]
+		{~}...它是一只鸟，{/~} {+MADELINE}。
+		
+		[BADELINE 右向 angry]
+		{+GRANNY} 已经走了。
+		
+		[MADELINE 左向 angry]
+		你{*}真的{/*}认为那只是一只普通的鸟？
+		
+		[MADELINE 左向 伤心表情
+		它是 {+PART_OF_HER}，不知怎么地，它还在这里。
+		
+		[MADELINE 左向 迷茫表情
+		也许有办法能让她回来。
+		
+		[MADELINE 左向 伤心表情
+		我必须... 做些什么。
+		
+		[BADELINE 右向 angryAlt]
+		...
+		这事我帮不了你。
+		
+		[MADELINE 左向 angry]
+		那就{*}走开！{/*}
+		
+		{trigger 1 Badeline Vanishes}
+		
+		[MADELINE 右向 determined]
+		别担心，{+GRANNY}。
+		我不会放弃的。
+
+	CH9_FAKE_HEART=
+		[MADELINE 右向 迷茫表情
+		等等，不...
+		
+		[MADELINE 右向 伤心表情
+		这不可能就是结局。
+
+	CH9_KEEP_GOING=
+		[MADELINE 右向 更加伤心
+		{+GRANNY} 还在某个地方。
+		
+		{trigger 0 Step Forward}
+		
+		[MADELINE 右向 determined]
+		这意味着我需要继续前进。
+
+	CH9_MISS_THE_BIRD=
+		[MADELINE 右向 angry]
+		{~}喂！{/~}
+		你不想要我帮你了吗？
+		
+		[MADELINE 右向 更加伤心
+		...你不想再看到我了吗，{+GRANNY}？
+		
+		{trigger 0 stand up，face 右向 }
+		
+		[MADELINE 右向 sad flip]
+		我不明白。
+		
+		[MADELINE 右向 distracted flip]
+		你是在考验我吗？
+		你只是害怕求助？
+		
+		[MADELINE 右向 sadder flip]
+		也许 {+PART_OF_ME} 是对的。{n}也许它{~}只是{/~}一只鸟。
+		...
+		
+		{trigger 1 take a step 右向}
+		
+		[MADELINE 右向 sad flip]
+		除非...
+		
+		{trigger 2 take a step 左向}
+		
+		[MADELINE 右向 surprised]
+		那只鸟不想让我救 {+GRANNY}。
+		
+		{trigger 3 black hole flickers }
+		
+		[MADELINE 右向 更加伤心
+		它在试图阻止我，就像 {+PART_OF_ME} 一样。
+		我一个人在这上面。
+		
+		{trigger 4 black hole flickers more，tiles to crack into the sci-fi one}
+		
+		[MADELINE 右向 angry]
+		好吧，我们不需要他们的帮助，对吗 {+GRANNY}？
+		
+		[MADELINE 右向 together]
+		别担心，我不会放弃的！
+		我要抓住那只笨鸟，放你自由。
+
+	CH9_HELPING_HAND=
+		[MADELINE 右向 upset]
+		我可没要你帮我。
+		
+		[BADELINE 左向 angryAlt]
+		我知道，但是算了吧 {+MADELINE}...
+		仔细想清楚。
+		
+		[BADELINE 左向 angry]
+		你什么时候才算完？
+		
+		{trigger 0 Madeline faces away}
+		
+		[MADELINE 右向 determined flip]
+		我要找到 {+GRANNY}！。
+		然后，也许我能带她回家...
+		
+		[MADELINE 右向 sadder flip]
+		哪怕整个宇宙与我为敌。
+		
+		[BADELINE 左向 worriedAlt]
+		...
+		
+		[BADELINE 左向 担忧
+		你不怕在这上面迷路吗？
+		
+		[MADELINE 右向 angry flip]
+		我会找到路的。
+		
+		[BADELINE 左向 worriedAlt]
+		...
+		
+		[BADELINE 左向 担忧
+		听我说，{+MADELINE}...
+		
+		[BADELINE 左向 worriedAlt]
+		我们不过是在{~}太空{/~}中追逐一只{~}神秘的鸟{/~}。
+		
+		[BADELINE 左向 upset]
+		这一切都不真实。
+		
+		[BADELINE 左向 关心
+		你是在做梦。
+		
+		[MADELINE 右向 sadder flip]
+		...
+		
+		[BADELINE 左向 关心
+		...她走了。
+		
+		[BADELINE 左向 upset]
+		是时候醒醒了。
+		
+		[MADELINE 右向 sadder flip]
+		但如果我们醒了，我们就再也见不到 {+GRANNY} 了...
+		
+		{trigger 1 Madeline faces towards badeline}
+		
+		[MADELINE 右向 angry]
+		我不敢相信你希望她永远消失！
+		你总是这么{*}自私{/*}。
+		
+		[BADELINE 左向 angry]
+		...
+		
+		[BADELINE 左向 angryAlt]
+		首先，它是一只{~}鸟{/~}。
+		我们不{~}知道{/~}那是不是她。
+		
+		[BADELINE 左向 yell]
+		{*}其次{/*}...
+		...
+		
+		[BADELINE 左向 sigh]
+		...我们需要退一步。
+		
+		{trigger 2 Madeline steps towards badeline}
+		
+		[MADELINE 右向 angry]
+		不，{!}{*}你{/*}{/!}才需要退一步。
+		{*}我一定要做这件事。{/*}
+		
+		[MADELINE 右向 伤心表情
+		不管你加不加入。
+		我再也不会让你阻挡我了。
+		
+		[MADELINE 右向 更加伤心
+		{+GRANNY} 需要我。
+		
+		[BADELINE 左向 simple_sigh]
+		好吧。
+		祝你好运。
+
+	CH9_CATCH_THE_BIRD=
+		[MADELINE 右向 surprised]
+		总算抓到你了！
+		
+		[MADELINE 右向 angry]
+		{+GRANNY} 在哪！？
+		
+		{trigger 0 bird looks hurt}
+		
+		[MADELINE 右向 angry]
+		...
+		
+		[MADELINE 右向 surprised]
+		哦，不。
+		你还好吗？
+		
+		{trigger 1 bird squaks}
+		
+		[MADELINE 右向 伤心表情
+		对不起，我不是有意伤害你的。
+		
+		{trigger 2 approach bird，it moves away}
+		
+		[MADELINE 右向 伤心表情
+		等等！请不要离开。
+		
+		{trigger 3 bird flys out of the camera}
+		
+		[MADELINE 右向 更加伤心
+		至少告诉我...
+		你是 {+PART_OF_GRANNY}，对吗？
+		如果你不得不走，那么...
+		
+		[MADELINE 右向 伤心表情
+		带我一起走。
+		
+		{trigger 4 badeline appears}
+		
+		[BADELINE 左向 yell]
+		{+MADELINE}，停下！
+		
+		[BADELINE 左向 关心
+		你不能跟她走。
+		
+		[MADELINE 右向 angry]
+		住口！
+		你不能逼我放弃 {+MOUNTAIN}。
+		而且你也不能逼我放弃 {+GRANNY}。
+		
+		[MADELINE 右向 更加伤心
+		{*}走开。{/*}
+		
+		[BADELINE 左向 关心
+		...
+		
+		[BADELINE 左向 担忧
+		我不是在逼你。
+		
+		[BADELINE 左向 关心
+		我是在求你。
+		
+		{trigger 5 Wait a beat}
+		
+		[BADELINE 左向 worriedAlt]
+		我也很想念 {+GRANNY}。
+		她对我们两个都很重要。
+		
+		[MADELINE 右向 伤心表情
+		那你为什么可以那么轻易地忘掉她？
+		
+		[BADELINE 左向 worriedAlt]
+		那并{~}不{/~}容易。
+		
+		[BADELINE 左向 担忧
+		为了让我们从这件事中走出来，也许我有点操之过急了...
+		
+		[BADELINE 左向 关心
+		但现在也不是回事。
+		我只是希望我们能挺过去。
+		
+		{trigger 6 Madeline sits}
+		
+		[MADELINE 右向 sadder flip]
+		...
+		我知道她不在了，
+		而这只是一个梦。
+		抓住这只鸟并不能让她回来。
+		
+		{trigger 7 badeline hugs madeline}
+		
+		[BADELINE 右向 关心
+		对不起，{+MADELINE}。
+		
+		[BADELINE 右向 关心
+		振作起来，让我们一起面对。
+		
+		[MADELINE 左向 更加伤心
+		...
+		
+		[MADELINE 左向 迷茫表情
+		不。
+		
+		[MADELINE 左向 伤心表情
+		现在还不行。
+		
+		{trigger 8 stand up}
+		
+		[MADELINE 左向 伤心表情
+		我要先弥补我犯的错。
+		
+		[BADELINE 右向 upset]
+		什么意思？
+		
+		[MADELINE 左向 伤心表情
+		那只鸟，它是因为我才被困住的。
+		
+		{trigger 9 shift camera over to the bird}
+		
+		[MADELINE 左向 sad flip]
+		在离开之前，我们要帮它逃脱。
+		{+GRANNY} 肯定不希望它像这样被困住。
+		
+		[BADELINE 右向 关心
+		你说得对。
+		
+		[BADELINE 右向 正常表情
+		动手吧。
+		
+		[BADELINE 右向 upset]
+		一旦做完这件事，{n}我们需要立刻醒来。
+		
+		[BADELINE 右向 担忧
+		这个地方太{*}诡异{/*}了。{n}我想回家。
+
+	CH9_LAST_ROOM=
+		[BADELINE 左向 正常表情
+		就是这样！我们就快出去了。
+		
+		[MADELINE 右向 充满决心
+		加油，为了 {+GRANNY}。
+
+	CH9_LAST_ROOM_ALT=
+		[BADELINE 左向 关心
+		你还好吗，{+MADELINE}？
+		
+		[MADELINE 右向 伤心表情
+		就差一点点，但感觉不可能成功...
+		
+		[BADELINE 左向 upset]
+		来吧，再多试几次。
+		
+		[BADELINE 左向 正常表情
+		我们能行的。
+
+	CH9_LAST_BOOST=
+		[BADELINE 左向 正常表情
+		帮我跟她道个别。
+
+	CH9_FAREWELL=
+		[MADELINE 右向 正常表情
+		{+GRANNY}！
+		
+		[GRANNY 左向 正常表情
+		嗨，孩子。
+		
+		[MADELINE 右向 正常表情
+		看见你太好了。
+		没有你，我不知道该怎么办。
+		
+		[MADELINE 右向 伤心表情
+		...
+		但你不是真的...
+		
+		[MADELINE 右向 更加伤心
+		这只是一个梦。
+		
+		[GRANNY 左向 正常表情
+		那又怎么样？
+		你还是历尽艰辛地找来了。
+		你终于找到我了，而{~}现在{/~}{n}你还在意这只是一个梦？
+		
+		[GRANNY 左向 mock]
+		别再找借口了，{n}说出你想要说的话吧。
+		
+		[MADELINE 右向 伤心表情
+		...
+		
+		[MADELINE 右向 迷茫表情
+		对不起，我没有出席你的葬礼。
+		
+		[MADELINE 右向 更加伤心
+		我做不到...那时候我谁也不想见。
+		
+		{silent_trigger 0 laugh}
+		
+		[GRANNY 左向 laugh]
+		嘿，听起来很熟悉。
+		
+		[MADELINE 右向 upset]
+		...
+		
+		{silent_trigger 1 stop laughing}
+		
+		[GRANNY 左向 正常表情
+		哈，我会在意谁出席了我的葬礼吗？
+		
+		{silent_trigger 0 laugh}
+		
+		[GRANNY 左向 laugh]
+		我都已经翘辫子了！
+		
+		{silent_trigger 1 stop laughing}
+		
+		[GRANNY 左向 mock]
+		葬礼是为你们{n}这些还活着的笨蛋们举办的。
+		
+		{trigger 2 take a step forward}
+		
+		[MADELINE 右向 正常表情
+		谢谢你在 {+MOUNTAIN} 上照看我。
+		
+		[MADELINE 右向 迷茫表情
+		你帮了我那么多，...
+		
+		[MADELINE 右向 更加伤心
+		我真的好想你。
+		
+		{trigger 3 granny fades away}
+		
+		[MADELINE 右向 更加伤心
+		我现在该怎么办？
+		继续前进，当做什么也没有发生？
+		
+		{silent_trigger 4 fade to white}
+		
+		[MADELINE 右向 panic]
+		当做你并没有...永远离开？
+
+	CH9_END_CINEMATIC=
+		{anchor bottom}
+		
+		[WEBCAM_THEO 左向 兴奋表情
+		她来了！
+		
+		[WEBCAM_THEO 左向 正常表情
+		好久不见，{# F94A4A}草莓{#}。
+		
+		[MADELINE 右向 伤心表情
+		嗨，{+THEO}。
+		
+		[WEBCAM_THEO 左向 正常表情
+		感觉过了一百年那么久！
+		
+		[WEBCAM_THEO 左向 思考表情
+		我一直在找你！{n}发生什么事了？
+		
+		[MADELINE 右向 伤心表情
+		是的，抱歉没有回复你的消息...
+		
+		[MADELINE 右向 迷茫表情
+		...或接你的电话...
+		...
+		...或回复你的电子邮件。
+		
+		[MADELINE 右向 伤心表情
+		{+GRANNY} 去世的时候，我整个人都感觉要崩溃了。
+		
+		[MADELINE 右向 迷茫表情
+		然后，我感觉给你发消息怪怪的。
+		我以为你会{n}因为我消失而生我的气。
+		
+		[MADELINE 右向 伤心表情
+		就这样一直拖到现在。
+		
+		[WEBCAM_THEO 左向 思考表情
+		哦哦，我了解你。
+		
+		[WEBCAM_THEO 左向 正常表情
+		我就猜可能是{n}葬礼的事，没关系的。
+		
+		[WEBCAM_THEO 左向 思考表情
+		如果有下次，{~}至少{/~}告诉我你还活着。
+		
+		[WEBCAM_THEO 左向 正常表情
+		你感觉好些了吗？
+		
+		[MADELINE 右向 伤心表情
+		是的...
+		
+		[MADELINE 右向 迷茫表情
+		我终于开始接受这件事了。
+		
+		[MADELINE 右向 伤心表情
+		我第一次遇到 {+GRANNY} 的时候，{n}我觉得她是个疯婆子。
+		
+		[MADELINE 右向 迷茫表情
+		但后来我越来越了解她...
+		
+		[MADELINE 右向 upset]
+		...我觉得她很刻薄。
+		
+		[MADELINE 右向 伤心表情
+		但她知道我需要听什么，{n}而且她真的帮了我很多。
+		
+		[MADELINE 右向 更加伤心
+		我很想她。
+		
+		[WEBCAM_THEO 左向 正常表情
+		是的，我也是。
+		
+		[WEBCAM_THEO 左向 思考表情
+		我真的以为她会永远活着。
+		
+		[WEBCAM_THEO 左向 兴奋表情
+		哦！这提醒我了！{n}我要让你看点东西。
+		
+		[MADELINE 右向 正常表情
+		哦？
+		
+		[WEBCAM_THEO 左向 兴奋表情
+		记得我告诉过你，我爷爷年轻的时候{n}去过{+CELESTE_MOUNTAIN}吗？
+		
+		[WEBCAM_THEO 左向 正常表情
+		那天，{n}我在和{+ALEX}一起翻他的一些旧东西...
+		看看我找到的这张照片。
+		
+		{trigger 0 Shows the photo of Theo's grandpa with Granny at Celeste Mountain.}
+		
+		[MADELINE 右向 surprised]
+		那是 {+GRANNY}！？和你爷爷在一起？
+		
+		[MADELINE 右向 正常表情
+		{+THEO}，太让人吃惊了！
+		看上去他们是好朋友。
+		
+		[WEBCAM_THEO 左向 兴奋表情
+		就像我们一样！
+		
+		[WEBCAM_THEO 左向 思考表情
+		他们都不在了，真令人难过。
+		
+		[WEBCAM_THEO 左向 正常表情
+		但现在知道我们{n}和他们都曾爬过 {+MOUNTAIN}，这感觉挺不错的。
+		
+		[MADELINE 右向 正常表情
+		是的...
+		
+		[MADELINE 右向 peaceful]
+		{>> 0.3}确{~}实{/~}不错。{>>}
+
+
+水晶心名称：
+	虚空
+
+# Wavedash Tutorial
+	WAVEDASH_DESKTOP_MYPC=我的大山
+	WAVEDASH_DESKTOP_POWERPOINT=wavedash.ppt
+	WAVEDASH_DESKTOP_RECYCLEBIN=回收站
+	WAVEDASH_DESKTOP_STARTBUTTON=BerryOS
+	WAVEDASH_PAGE1_TITLE=凌波微步和你
+	WAVEDASH_PAGE1_SUBTITLE=空中抓鸟的实用方法
+	WAVEDASH_PAGE2_TITLE=抓|不|到|那只鸟？
+	WAVEDASH_PAGE2_LIST=
+		-事实：鸟很难抓{n}
+		-哇哦。它很快！{n}
+		-它还会飞{n}
+		-而 {+PART_OF_YOU} 不动手帮忙{n}
+		-（她最坏了）
+
+	WAVEDASH_PAGE2_IMPOSSIBLE=不可能完成的任务？？？
+	WAVEDASH_PAGE3_TITLE=介绍...凌波微步！！
+	WAVEDASH_PAGE3_INFO=凌波微步可以让您跳得很远{n}，同时重新获得突进{~}能力！{/~}
+	WAVEDASH_PAGE3_EASY=这很“简单”！
+	WAVEDASH_PAGE4_TITLE=操作方法
+	WAVEDASH_PAGE4_LIST=
+		-跳跃{n}
+		-斜着向地面突进{n}
+		-立即再次跳跃并按住前进{n}
+		-{~}成功了！{/~}{n}
+		-（走你）
+
+	WAVEDASH_PAGE5_TITLE=天堂中的麻烦？
+	WAVEDASH_PAGE5_INFO1={#ff0000}如果没有重新获得突进能力{#}{n}，那就是您开始的时候离地面{~}太近{/~}了。
+	WAVEDASH_PAGE5_INFO2={#ff0000}如果没能跳得很远{#}{n}，那就是您开始的时候离地面{~}太远{/~}了。
+	WAVEDASH_PAGE6_TITLE=凌波微步，快乐的舞步！
