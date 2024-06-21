@@ -1,0 +1,84 @@
+body {
+  background-color: black;
+  color:white;
+  text-shadow:2px 2px 4px DeepSkyBlue
+}
+p.head {
+  font-family: "Times New Roman", times, serif;
+  font-size: 700%;
+}
+p.h2 {
+  font-family: "Times New Roman", times, serif;
+  font-size: 450%;
+}
+img {
+  max-width: 100%;
+  height: auto;
+}
+pre {
+  font-family: "Times New Roman", Times, serif;
+  font-size: 200%;
+}
+a {text-decoration:none;
+}
+a:link {
+  color:#F8F8FF;
+}
+a:visited {
+  color:Azure;
+}
+a:hover {
+  color:DeepSkyBlue;
+}
+a:active {
+  color:#E6E6FA;
+}
+button{
+  background-image: linear-gradient(-180deg, #a0b8cf 0%, #a0b8cf 40%, #799ab3 50%, #799ab3 70%, #a5bccc 100%);
+  border-radius: .4rem;
+  box-sizing: border-box;
+  color: #FFFFFF;
+  display: flex;
+  font-size: 100%;
+  justify-content: center;
+  padding: 1rem 1.75rem;
+  text-decoration: none;
+  border: 0;
+  cursor: pointer;
+}
+button:hover {
+  background-image: linear-gradient(-180deg, #a4bbda 0%, #a4bbda 40%, #2e5e90 50%, #2e5e90 70%, #00bfff 100%);
+  box-shadow: 0px 0px 2px 2px rgb(111,202,231);
+}
+div.index {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  width: 10%;
+  height: 3.5%;
+}
+div.index:hover{
+  width: 40%;
+  height: 35%;
+}
+div.comment:hover{
+  width: 40%;
+  height: 35%;
+}
+div.comment{
+  position: fixed;
+  bottom: 0;
+  right: 10%;
+  width: 10%;
+  height: 3.5%;
+}
+div {
+  width:10%;
+  height:3.5%;
+  background:darkslategray;
+  color:ghostwhite;
+  transition: width 0.7s, height 1.2s;
+  border-radius: 10px;
+  border: 2px solid azure;
+  overflow:hidden;
+}
