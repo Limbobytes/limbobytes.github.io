@@ -1,0 +1,5235 @@
+<head>
+<meta charset="utf-8">
+<link rel="stylesheet" type="text/css" href="../../theme/Aero.css" />
+<title>Celeste剧情原文本</title>
+<body>
+<pre>
+<h3>Celeste剧情</h3>
+优化前的原文本
+作者 Matt makes games Inc.
+<hr>
+ # Language
+	LANGUAGE=schinese,简体中文
+	ICON=Icons/simplified-chinese.png
+	ORDER=70
+	SPLIT_REGEX=(\s|\{|\})|([^\s\{\}]+?[、|。|！|」|，])
+	COMMAS=,、，
+	PERIODS=.?!？！。
+	FONT=Noto Sans CJK SC Medium,64
+	BEGIN=true
+
+# Auto-Saving
+	AUTOSAVING_TITLE_NS=
+		本游戏具有自动存档功能
+	AUTOSAVING_DESC_NS=
+		显示此图标时
+		请勿关闭游戏机
+	AUTOSAVING_TITLE_PS4=
+		本游戏具有自动存档功能
+	AUTOSAVING_DESC_PS4=
+		显示此图标时
+		请勿关闭游戏机
+	AUTOSAVING_TITLE_XB1=
+		本游戏具有自动存档功能
+	AUTOSAVING_DESC_XB1=
+		显示此图标时
+		请勿关闭游戏机
+	AUTOSAVING_TITLE_PC=
+		本游戏具有自动存档功能
+	AUTOSAVING_DESC_PC=
+		显示此图标时
+		请勿关闭游戏机
+
+# Main Menu
+	MENU_DEBUG=		~调试~
+	MENU_BEGIN=		攀登
+	MENU_PICO8=		PICO-8
+	MENU_OPTIONS=	选项
+	MENU_CREDITS=	主创人员
+	MENU_EXIT=		退出
+
+# Options
+	OPTIONS_TITLE=			选项
+	OPTIONS_CONTROLS=		控制
+	OPTIONS_RUMBLE_PC=		震感
+	OPTIONS_RUMBLE_PS4=		振动
+	OPTIONS_RUMBLE_XB1=		振动
+	OPTIONS_RUMBLE_NS=		震感
+	OPTIONS_RUMBLE_ON=		100%
+	OPTIONS_RUMBLE_HALF=	50%
+	OPTIONS_RUMBLE_OFF=		关
+	OPTIONS_GRAB_MODE=		抓取模式
+	OPTIONS_CROUCH_DASH_MODE=	下蹲冲刺模式
+	OPTIONS_BUTTON_PRESS=	按下
+	OPTIONS_BUTTON_HOLD=	按住
+	OPTIONS_BUTTON_INVERT=	反转
+	OPTIONS_BUTTON_TOGGLE=	切换
+	OPTIONS_KEYCONFIG=		键盘配置
+	OPTIONS_BTNCONFIG=		游戏手柄配置
+
+	OPTIONS_VIDEO=			视频
+	OPTIONS_FULLSCREEN=		全屏
+	OPTIONS_WINDOW=			窗口尺寸
+	OPTIONS_VSYNC=			垂直同步
+	OPTIONS_VIEWPORT_NS=	调整屏幕大小
+	OPTIONS_VIEWPORT_PS4=	调整屏幕大小
+	OPTIONS_VIEWPORT_XB1=	调整屏幕大小
+	OPTIONS_VIEWPORT_PC=	调整屏幕大小
+	OPTIONS_DISABLE_FLASH=	光敏模式
+	OPTIONS_DISABLE_SHAKE=	屏幕震动特效
+
+	OPTIONS_AUDIO=			音频
+	OPTIONS_MUSIC=			音乐
+	OPTIONS_SOUNDS=			音效
+
+	OPTIONS_GAMEPLAY=		游戏设置
+	OPTIONS_SPEEDRUN=		快速通关计时器
+	OPTIONS_SPEEDRUN_CHAPTER=章节
+	OPTIONS_SPEEDRUN_FILE=	文件
+	OPTIONS_DASHES=			突进计数器
+	OPTIONS_LANGUAGE=		语言
+	OPTIONS_ON=				开
+	OPTIONS_OFF=			关
+
+# KEYBOARD CONFIG
+	KEY_CONFIG_TITLE=		键盘配置
+	KEY_CONFIG_MOVEMENT=	移动
+	KEY_CONFIG_LEFT=		向左
+	KEY_CONFIG_RIGHT=		向右
+	KEY_CONFIG_UP=			向上
+	KEY_CONFIG_DOWN=		向下
+	KEY_CONFIG_GAMEPLAY=	动作
+	KEY_CONFIG_JUMP=		跳跃
+	KEY_CONFIG_DASH=		突进
+	KEY_CONFIG_GRAB=		抓住
+	KEY_CONFIG_TALK=		交谈
+	KEY_CONFIG_MENUS=		菜单
+	KEY_CONFIG_CONFIRM=		确认
+	KEY_CONFIG_CANCEL=		取消
+	KEY_CONFIG_PAUSE=		暂停
+	KEY_CONFIG_JOURNAL=		日志
+	KEY_CONFIG_QUICKRESTART=重玩本关
+	KEY_CONFIG_RESET=		重置为默认设置
+	KEY_CONFIG_CHANGING=	按新键设置以下动作
+	KEY_CONFIG_MOVE_ONLY=	仅用于移动
+	KEY_CONFIG_DASH_ONLY=	仅用于冲刺
+
+# CONTROLLER CONFIG
+	BTN_CONFIG_TITLE=		游戏手柄配置
+	BTN_CONFIG_INFO=		按 | 添加按钮，按 | 清除按钮
+	BTN_CONFIG_CHANGING=	按所需按钮，将其设置为
+	BTN_CONFIG_NOCONTROLLER=请连接游戏手柄
+
+# ADDITIONAL OPTIONS FOR V1.4.0.0
+	KEY_CONFIG_DEMO=		下蹲冲刺
+	KEY_CONFIG_ADVANCED=	高级
+	KEY_CONFIG_MENU_NOTICE= 每个动作需要绑定 1 个唯一按键
+
+# PICO-8
+	PICO8_UNLOCKED=			现在可以通过主菜单开始游戏
+	PICO8_PAUSE_TITLE=		已暂停
+	PICO8_PAUSE_CONTINUE=	继续游戏
+	PICO8_PAUSE_RESTART=	重置 PICO-8
+	PICO8_PAUSE_QUIT=		退出 PICO-8
+
+# FILE MENU
+	FILE_DEFAULT=		Madeline
+	FILE_CORRUPTED=		已损坏:(
+	FILE_FAILEDTOLOAD=	无法加载
+	FILE_NEWGAME=		开始新游戏！
+	FILE_CONTINUE=		继续
+	FILE_DELETE=		删除
+	FILE_BEGIN=			开始
+	FILE_ASSIST_OFF=	帮助模式： 关
+	FILE_ASSIST_ON=		帮助模式： 开
+	FILE_VARIANT_OFF=	Variant Mode : OFF
+	FILE_VARIANT_ON=	Variant Mode : ON
+	FILE_RENAME=		重命名
+	FILE_DELETE_REALLY=	是否确定？
+	FILE_DELETE_NO=		取消
+	FILE_DELETE_YES=	删除
+	FILE_DELETE_FAILED=	无法删除文件！
+
+# Assist Mode
+	ASSIST_MODE_0=
+		在{# 44adf7}帮助模式{#}下，您可以根据自己的{n}
+		独特需要修改游戏规则，
+	ASSIST_MODE_1=
+		包括降低游戏速度、{n}
+		让自己变得无敌或体力无限{n}以及跳过整个章节等。
+	ASSIST_MODE_2=
+		Celeste 旨在给您带来既富有挑战性又令人满足的游戏体验。{n}
+		如果您在默认设置下无法通关游戏，我们希望{n}
+		您仍能通过{# 44adf7}帮助模式{#}获得这样的体验。
+	ASSIST_ASK=		是否要在{# 44adf7}帮助模式{#}下进行游戏？
+	ASSIST_YES=		是
+	ASSIST_NO=		否
+	ASSIST_SKIP=	辅助{n}跳跃
+
+# File Naming
+	NAME_LETTERS=
+		ABCDEFGHI abcdefghi
+		JKLMNOPQR jklmnopqr
+		STUVWXYZ  stuvwxyz
+		1234567890+=:~!@$%
+		^&*_-#"'()<>/\.,|`
+
+	NAME_SPACE=			空格
+	NAME_BACKSPACE=		退格
+	NAME_ACCEPT=		接受
+	NAME_BACK=			取消
+
+# Xbox One Stuff
+	XB1_MENU_SWITCH_PROFILE=	切换用户
+	XB1_SIGN_OUT_MESSAGE=		发生了登录变化。 请重新登录或退出至标题屏幕。
+	XB1_SIGN_IN=				登录
+	XB1_RECONNECT_CONTROLLER=	请重新连接控制器以继续。
+
+# Intro Vignette
+	INTRO_VIGNETTE_RESUME=	继续
+	INTRO_VIGNETTE_SKIP=	跳过
+	INTRO_VIGNETTE_QUIT=	退出
+
+# Overworld
+	OVERWORLD_START=			开始
+	OVERWORLD_NORMAL=			攀登
+	OVERWORLD_INTERLUDE=		开始
+	OVERWORLD_REMIX=			B 面
+	OVERWORLD_REMIX2=			C 面
+	OVERWORLD_REMIX_UNLOCKED=	B 面解锁！
+	OVERWORLD_REMIX_UNLOCKED2=	C 面解锁！
+
+# Chapter Titles
+	AREA_CHAPTER=	第 {x} 章
+	AREA_0=			序幕
+	AREA_1=			被遗弃的城市
+	AREA_2=			旧址
+	AREA_3=			天空度假山庄
+	AREA_4=			黄金山脊
+	AREA_5=			镜之寺庙
+	AREA_6=			沉思
+	AREA_7=			山顶
+	AREA_8=			尾声
+	AREA_9=			核心
+
+# Checkpoints
+	CHECKPOINT_1_0=		十字路口
+	CHECKPOINT_1_1=		峡谷
+
+	CHECKPOINT_2_0=		干涉
+	CHECKPOINT_2_1=		唤醒
+
+	CHECKPOINT_3_0=		乱七八糟
+	CHECKPOINT_3_1=		电梯井
+	CHECKPOINT_3_2=		总统套房
+
+	CHECKPOINT_4_0=		神迹
+	CHECKPOINT_4_1=		古道
+	CHECKPOINT_4_2=		悬崖峭壁
+
+	CHECKPOINT_5_0=		深渊
+	CHECKPOINT_5_1=		豁然开朗
+	CHECKPOINT_5_2=		搜寻
+	CHECKPOINT_5_3=		营救
+
+	CHECKPOINT_6_0=		湖
+	CHECKPOINT_6_1=		洞穴
+	CHECKPOINT_6_2=		深思
+	CHECKPOINT_6_3=		谷底
+	CHECKPOINT_6_4=		决断
+
+	CHECKPOINT_7_0=		500 米
+	CHECKPOINT_7_1=		1000 米
+	CHECKPOINT_7_2=		1500 米
+	CHECKPOINT_7_3=		2000 米
+	CHECKPOINT_7_4=		2500 米
+	CHECKPOINT_7_5=		3000 米
+
+	CHECKPOINT_8_0=		深入腹地
+	CHECKPOINT_8_1=		冰火两重天
+	CHECKPOINT_8_2=		山之心
+
+# B-Side Checkpoints
+	CHECKPOINT_1H_0=	机器
+	CHECKPOINT_1H_1=	垃圾场
+
+	CHECKPOINT_2H_0=	密码锁
+	CHECKPOINT_2H_1=	梦幻圣坛
+
+	CHECKPOINT_3H_0=	职工宿舍
+	CHECKPOINT_3H_1=	图书馆
+	CHECKPOINT_3H_2=	屋顶
+
+	CHECKPOINT_4H_0=	踏脚石
+	CHECKPOINT_4H_1=	大风峡谷
+	CHECKPOINT_4H_2=	风暴之眼
+
+	CHECKPOINT_5H_0=	中庭
+	CHECKPOINT_5H_1=	穿过镜子
+	CHECKPOINT_5H_2=	混音大师
+
+	CHECKPOINT_6H_0=	深思
+	CHECKPOINT_6H_1=	谷底
+	CHECKPOINT_6H_2=	暂缓执行
+
+	CHECKPOINT_7H_0=	500 米
+	CHECKPOINT_7H_1=	1000 米
+	CHECKPOINT_7H_2=	1500 米
+	CHECKPOINT_7H_3=	2000 米
+	CHECKPOINT_7H_4=	2500 米
+	CHECKPOINT_7H_5=	3000 米
+
+	CHECKPOINT_8H_0=	深入腹地
+	CHECKPOINT_8H_1=	山之心
+	CHECKPOINT_8H_2=	心跳
+
+# Postcards
+	POSTCARD_AREA_1=
+		您可以随时从暂停菜单中选择{#ff1144}保存并退出{#}并休息一会儿。 之后您将从同一画面继续游戏，不会丢失任何进度！
+
+	POSTCARD_AREA_2=
+		{#ff1144}草莓{#}将给您的朋友留下印象，但仅此而已。 只在您真正需要时才收集！
+
+	POSTCARD_AREA_3=
+		为{#ff1144}死亡次数{#}而欢呼吧！{n}死亡次数越多，表示您的经验越丰富。{n}继续加油！
+
+	POSTCARD_AREA_4=
+		{# F94A4A}攀登技巧！{#}{n}在紧要关头体力不够了？{n}{n}从墙壁跳开{n}不耗体力！
+
+	POSTCARD_AREA_5=
+		{# F94A4A}您知道吗？{#}{n}大多数登山事故{n}都是因为精疲力竭。{n}{n}记得经常休息！
+
+	POSTCARD_AREA_6=
+		{# F94A4A}您知道吗？{#}{n}{n}您不可能{n}跑得比自己的影子快。
+
+	POSTCARD_CSIDES=
+		准备好接受真正的挑战了吗？{n}{n}{# F94A4A}C 面{#}已解锁，{n}每一章的起点已经会出现{# dbb63f}黄色草莓{#}！{n}{n}祝你好运，{+MADELINE}！
+
+# Journal
+	JOURNAL_OF=
+	JOURNAL_PROGRESS=				进度
+	JOURNAL_SPEEDRUNS=				记录： 快速通关
+	JOURNAL_DASHES=					记录： 突进次数最少
+	JOURNAL_DEATHS=					记录： 死亡次数最少
+	JOURNAL_POEM=					水晶之心
+	JOURNAL_MODE_NORMAL=			通关
+	JOURNAL_MODE_NORMAL_FULLCLEAR=	完全通关
+	JOURNAL_MODE_BSIDE=				B 面
+	JOURNAL_MODE_CSIDE=				C 面
+	JOURNAL_TOTALS=					总计
+	JOURNAL_GRANDTOTAL=				统计
+
+# Saving / Loading Failed
+	SAVEFAILED_TITLE=	无法保存
+	SAVEFAILED_RETRY=	重试
+	SAVEFAILED_IGNORE=	继续而不保存
+	LOADFAILED_TITLE=	无法加载
+	LOADFAILED_GOBACK=	返回
+	LOADFAILED_IGNORE=	继续而不保存
+
+# Tutorial
+	TUTORIAL_CLIMB=		攀登
+	TUTORIAL_HOLD=		按住
+	TUTORIAL_DASH=		突进
+	TUTORIAL_DREAMJUMP=	跳跃
+	TUTORIAL_CARRY=		背负
+
+# Area Complete
+	AREACOMPLETE_NORMAL=				章节完成
+	AREACOMPLETE_NORMAL_FULLCLEAR=		章节通关
+	AREACOMPLETE_BSIDE=					B 面完成
+	AREACOMPLETE_CSIDE=					C 面完成
+	MOUNTAIN_COMPLETE_NORMAL=			完成
+	MOUNTAIN_COMPLETE_NORMAL_FULLCLEAR=	通关
+	MOUNTAIN_COMPLETE_BSIDE=			B 面完成
+	MOUNTAIN_COMPLETE_CSIDE=			C 面完成
+
+# Game Paused
+	MENU_PAUSE_TITLE=			暂停
+	MENU_PAUSE_RESUME=			继续游戏
+	MENU_PAUSE_SKIP_CUTSCENE=	跳过剧情动画
+	MENU_PAUSE_RETRY=			重试
+	MENU_PAUSE_ASSIST=			帮助选项
+	MENU_PAUSE_VARIANT=			Variants
+	MENU_PAUSE_OPTIONS=			选项
+	MENU_PAUSE_RESTARTAREA=		重新开始章节
+	MENU_PAUSE_SAVEQUIT=		保存并退出
+	MENU_PAUSE_RETURN=			返回地图
+	MENU_PAUSE_RESTARTDEMO=		重新开始演示
+
+# Assist UI
+	MENU_ASSIST_TITLE=				帮助模式
+	MENU_ASSIST_SUBTITLE=			Assists
+	MENU_ASSIST_GAMESPEED=			游戏速度
+	MENU_ASSIST_INVINCIBLE=			无敌
+	MENU_ASSIST_AIR_DASHES=			空中突进
+	MENU_ASSIST_AIR_DASHES_NORMAL=	默认
+	MENU_ASSIST_AIR_DASHES_TWO=		2
+	MENU_ASSIST_AIR_DASHES_INFINITE=无限
+	MENU_ASSIST_INFINITE_STAMINA=	无限体力
+
+# Misc UI
+	UI_CUTSCENE_SKIP=	跳过
+	UI_REMIX_UNLOCKED=	B 面解锁
+	UI_CANCEL=			返回
+	UI_CONFIRM=			确认
+	UI_QUICK_RESTART_TITLE=重玩本关：
+	UI_QUICK_RESTART_HOLD=按住
+	UI_QUICK_RESTART_PRESS=按
+
+# B SIDES
+	REMIX_BY=			配乐
+	REMIX_ALBUM=		Celeste B 面
+
+	AREA_1_REMIX=		(Sever the Skyline Mix)
+	AREA_2_REMIX=		(Black Moonrise Mix)
+	AREA_3_REMIX=		(Good Karma Mix)
+	AREA_4_REMIX=		(Golden Feather Mix)
+	AREA_5_REMIX=		(Mirror Magic Mix)
+	AREA_6_REMIX=		(Center of the Earth Mix)
+	AREA_7_REMIX=		(No More Running Mix)
+	AREA_9_REMIX=		(Say Goodbye Mix)
+
+# Credits
+	CREDITS_THANKYOU=	感谢参与游戏:)
+
+# Names
+	THEO=				{# FF9523}Theo{#}
+	THEO_UNDER_STARS=	{# FFFF4C}TheoUnderStars{#}
+	MIXMASTER_THEO=		{# FF9523}混音大师 Theo{#}
+	MOM=				{# 339CC7}妈妈{#}
+	MROSHIRO=			{# 7BD838} Oshiro 先生{#}
+	OSHIRO=				{# 7BD838}Oshiro{#}
+	ELCREEPO=			{# 7BD838}El Creepo{#}
+	MADELINE=			{# F94A4A}{savedata Name}{#}
+	MS_MADELINE=		{# F94A4A} {savedata Name} 女士{#}
+	RESORT=				{# b864be}天空度假山庄{#}
+	THOUGHT=			{# 696a6a}{~}(
+	ENDTHOUGHT=			){/~}{#}
+	MOUNTAIN=			{# 96EFFF}山{#}
+	CELESTE_MOUNTAIN=	{# 96EFFF}塞莱斯特山{#}
+	PART_OF_ME=			{# d678db}{~}另一个我{/~}{#}
+	PART_OF_YOU=		{# d678db}{~}另一个你{/~}{#}
+	ST_BAD=				{# d678db}{~}
+	END_BAD=			{/~}{#}
+
+# Theo sister name
+# if the player name is the same as this one, theo's sister name becomes the ALT_NAME
+	THEO_SISTER_NAME=		Alex
+	THEO_SISTER_ALT_NAME=	Maddy
+	ALEX=					{# F94A4A}{savedata TheoSisterName}{#}
+
+# ================================== IN-GAME DIALOG BEGINS HERE!==================================
+
+# *** Prologue ***
+
+	CH0_INTRO=
+		就是这样，{+MADELINE}。
+		只需呼吸。
+		为什么你这么紧张？
+
+	CH0_GRANNY=
+		{anchor top}
+
+		[MADELINE left normal]
+		夫人，请问一下。
+
+		{trigger 0 Madeline walks forward}
+
+		[MADELINE left normal]
+		前面的牌子损坏了...{n}这是{+mountain}路吗？
+
+		[GRANNY right normal]
+		快到了。{n}穿过这座桥就是。
+
+		{trigger 1 Madeline walks to the right of the house, turns left}
+		
+		[MADELINE right sad]
+		顺便一提，你应该打电话让人来看看你的私人车道。山脊塌方了，我差点就死掉了。
+
+		{trigger 2 Granny laughs}
+
+		[GRANNY left laugh]
+		如果我的{>> 0.3}“私人车道”{>>}{0.2}让你差点死掉，{n}那么这{+mountain}对你而言可能太过困难。
+
+		{trigger 3 Laugh Continues}
+
+		[MADELINE right upset]
+		{0.5}...{0.2}
+
+		[MADELINE right angry]
+		如果像{~}你一样的老人家{/~}都能{n}在那里生存下来，我想我没问题。
+
+		{trigger 4 Stop laughing}
+
+		[GRANNY left normal]
+		随便你了。
+
+		{silent_trigger 5 Ominous zoom-in}
+
+		[GRANNY left normal]
+		但是你要知道，{n}{+CELESTE_MOUNTAIN}是个诡异的地方。
+
+		[GRANNY left creepA]
+		你可能会看到一些东西，
+		
+		[GRANNY left creepB]
+		一些让你感到不可思议的东西。
+
+		{trigger 6 pan to Maddy}
+
+		[MADELINE right upset]
+		小姐，你应该寻求帮助。
+
+		{trigger 3 resume laughing}
+
+	CH0_END=
+		你能做到。
+
+# *** Chapter 01 ***
+
+	CH1_THEO_A=
+		[THEO left normal]
+		你好，小旅行家！
+
+		[MADELINE right distracted]
+		噢...你好。
+
+		{trigger 0 Madeline approaches}
+		
+		[THEO left normal]
+		月黑风高杀人夜，正适合远足！
+
+		[MADELINE right distracted]
+		我想是这样的。
+
+		[THEO left normal]
+		这个地方太疯狂了。 
+
+		[THEO left excited]
+		我几乎不敢相信它居然真的存在！
+
+		[MADELINE right sad]
+		攀登起来一点都不简单，对吧？
+
+		[MADELINE right distracted]
+		但这正是我想要的...
+		
+		[THEO left normal]
+		哇哦，这听起来相当严肃。
+		我很高兴在这荒凉的地方{n}见到另一个人。
+
+		[THEO left excited]
+		自我介绍一下，我叫 {+ theo}，是一名来自{>> 0.3}{~}遥远地方{/~}{>>}的探险家！
+		
+		[MADELINE right sad]
+		...{0.2}
+
+		[THEO left thinking]
+		你不太爱说话，对吧？
+
+		[THEO left normal]
+		神秘的独行侠，我知道了。{n}我会想象一些与你相符的黑暗背景故事。
+
+	CH1_THEO_B=
+		[MADELINE right sad]
+		嘿，抱歉。 我是 {+MADELINE}。
+		我的脑子有点乱。
+
+		[THEO left normal]
+		好吧，{+MADELINE}，我想说你来到了对的地方！
+
+		[THEO left thinking]
+		我的脚趾头都要冻掉了，但是我想不出{n}哪里更适合安静的沉思。
+		
+		[MADELINE right sad]
+		是的，也许你是对的。
+
+		[MADELINE right normal]
+		你来自哪个“{>> 0.5}{~}遥远地方{/~}{>>}”？
+		
+		[THEO left excited]
+		我的好奇小伙伴，我{n}来自于{0.3}{~}神秘{0.4}而充满异国风情的{/~}{0.4}...
+		
+		[THEO left normal]
+		{0.4}西雅图。
+
+		[MADELINE right normal]
+		听起来像是一个特别的地方。
+
+	CH1_THEO_C=
+		[THEO left excited]
+		这地方很荒凉！
+
+		[THEO left normal]
+		为什么整个城市会被抛弃？
+		
+		[MADELINE right normal]
+		我看报道说某个特大型企业开发了这座城市，{n}但没人愿意来住。
+
+		[MADELINE right distracted]
+		我很好奇为什么...
+		
+		[THEO left excited]
+		我的钱大概被政府用来掩盖事实了。
+
+		[MADELINE right distracted]
+		好可惜，无缘无故地建造这一切...
+
+		[THEO left normal]
+		至少我们还可以探索一些残垣断壁。
+
+	CH1_THEO_D=
+		[MADELINE right normal]
+		你是来这里探索这座城市的吗？
+		
+		[THEO left normal]
+		我对探索遗迹挺着迷的。
+		
+		[THEO left thinking]
+		我喜欢把自己设想成{n}一名初露头角的摄影师。
+		
+		[MADELINE right normal]
+		噢，是吗？酷！
+		你有博客什么的吗？
+		
+		[THEO left thinking]
+		博客？
+		{+MADELINE}。
+		现在每个人都在用 {# FFFF4C}InstaPix{#}。
+		
+		[THEO left excited]
+		我是 {+THEO_UNDER_STARS}，记得关注我！
+
+	CH1_THEO_E=
+		[THEO left normal]
+		这里的地形相当复杂，{n}你要往回走了吗？
+		
+		[MADELINE right normal]
+		不。我要走到山顶。
+		
+		[THEO left excited]
+		从你的眼中，我确实看到了决心！
+
+		[THEO left normal]
+		很让人振奋。
+
+		[MADELINE right distracted]
+		你爱怎么说都行。
+
+		[MADELINE right normal]
+		我打赌你也能登上山顶。
+
+		[THEO left normal]
+		也许吧。 
+		
+		[THEO left thinking]
+		老实说，我并不十分在意能不能登顶。
+
+		[THEO left normal]
+		{!}噢！{/!} 但是我听说在城市之上有一些{~}真正的{/~}{n}古老遗迹。
+		
+		[THEO left excited]
+		比如源于 19 世纪的那些。 
+
+		[THEO left normal]
+		我知道很危险，但我必须亲眼看到它们。
+
+	CH1_THEO_F=
+		[THEO left normal]
+		你之前说你做了一些不负责任的事情，{n}是什么事？
+
+		[MADELINE right sad]
+		呃...“不计后果地冒险？”
+
+		[THEO left wtf]
+		不，不是。
+
+		[THEO left excited]
+		噢好吧...
+
+		{trigger 0 Theo pumps his fist in the air}
+		
+		[THEO left yolo]
+		{big}{~}人的生命{>> 0.5}只有{>> 0.2}一次！！{>>}{/~}{/big}
+
+	MEMORIAL=
+		-- 塞莱斯特山 --
+		谨纪念那些
+		为登山事业献出生命的探险家
+
+	CH1_END=
+		[MADELINE left distracted]
+		啊，我快不行了。
+
+		{trigger 0 MADELINE sits down to rest.A bird swoops in, lands on her head, and goes to sleep}
+		
+		[MADELINE left deadpan]
+		{>> 0.4}这也许是个错误。
+
+# *** Chapter 02 ***
+
+	CH2_BADELINE_INTRO=
+		{anchor top}
+		
+		[BADELINE left normal]
+		{+MADELINE}，亲爱的，慢一点。
+
+		{trigger 0 Madeline turns around}
+		
+		[MADELINE right distracted]
+		谁在说话？
+		
+		[BADELINE left normal]
+		噢，我只是你的旁观者。
+
+		{trigger 1 Badeline is revealed}
+		
+		[MADELINE right sad]
+		你是...我？
+
+		[BADELINE left normal]
+		我是{+PART_OF_YOU}。
+
+		[MADELINE right sad]
+		为什么{+PART_OF_ME}看起来如此{0.3}{*}诡异？{/*}
+
+		[BADELINE left worried]
+		...
+
+		[BADELINE left angry]
+		这就是我的样子，好吗？
+		克服一下吧。
+
+		[MADELINE right distracted]
+		抱歉，我不是这个意思-
+
+		[BADELINE left angry]
+		算了。
+		我没法告诉你{n}最终{~}从你的脑海中逃出来{/~}是有多轻松。
+
+		[BADELINE left upset]
+		但是，我对我们表示担忧。
+
+		[BADELINE left normal]
+		我们需要一个爱好，但是这个...
+		
+		[MADELINE right sad]
+		我知道这听起来很疯狂，但{n}我要登上这座{+mountain}。
+
+		{trigger 2 Badeline starts laughing}
+		
+		[BADELINE left scoff]
+		你可以做很多事情，亲爱的，{n}但你绝不是一个{~}登山运动员{/~}。
+
+		[MADELINE right distracted]
+		谁说我不能？
+
+		{trigger 3 Badeline stops laughing}
+		
+		[BADELINE left upset]
+		我知道这不是你的特长，{n}理智一点。
+		你不知道你会遇到什么情况。
+		你应付不来的。
+		
+		[MADELINE right upset]
+		这正是我需要做这件事的原因。
+		你是软弱的{+PART_OF_ME}还是懒惰的另一个我？
+
+		[BADELINE left upset]
+		我是务实的另一个你。
+		
+		[BADELINE left scoff]
+		现在{~}我希望{/~}说服你放弃登山。
+		
+		[BADELINE left serious]
+		{s 4}让我们一起{.6}[BADELINE left serious_alt]回家。
+
+	CH2_DREAM_PHONECALL=
+		[MADELINE_PHONE left distracted]
+		你好？
+		
+		[EX_PHONE right normal]
+		{+MADELINE}？
+		...你用公共电话打的？
+
+		[MADELINE_PHONE left distracted]
+		是的。
+
+		[MADELINE_PHONE left sad]
+		不，等等...你居然给我打电话了。
+
+		[EX_PHONE right normal]
+		你在说什么？
+		
+		[MADELINE_PHONE left distracted]
+		没关系。我遇到了麻烦。
+		有人...在追我。
+
+		[MADELINE_PHONE left sad]
+		我并不十分清楚状况，{n}但我知道我很危险。 我能感觉到。
+		
+		[EX_PHONE right normal]
+		{+MADELINE}，你只会在半夜{n}惊异失措时才给我打电话。
+		你不必为了引起我的注意{n}而编造一些愚蠢的故事。
+		
+		[MADELINE_PHONE left angry]
+		我才没有编造！
+		你总是这样！
+		
+		[EX_PHONE right normal]
+		{~}嘘{/~}{0.5}是这样的，冷静下来。
+		很抱歉，我的宝贝。
+		给我说说。
+		
+		[MADELINE_PHONE left sad]
+		我正在攀登{+celeste_mountain}。{n}我找到了这面古老的镜子，它碎了，{n}但另一个我逃走了，并且...
+
+		[MADELINE_PHONE left upset]
+		...
+		...我就像在做梦，是不是？
+		
+		[EX_PHONE right normal]
+		{+MADELINE}。 你当然在做梦。
+		我已经几个月没跟你说话了。
+		为什么我现在要开始跟你说话？
+		
+		[MADELINE_PHONE left angry]
+		呃！ 为什么我要来攀登这破{+mountain}？
+
+		{trigger 0 Badeline appears}
+		
+		[BADELINE right scoff]
+		对于这个问题，我也感到很疑惑。
+		
+		[BADELINE right upset]
+		是时候放弃然后回家了。
+
+	# if the MADELINE has never met Theo before
+	CH2_THEO_INTRO_NEVER_MET=
+		[THEO left normal]
+		哦那边的探险家伙伴！
+		
+		[MADELINE right distracted]
+		噢...你好。
+
+		{trigger 0 Madeline approaches}
+
+		[THEO left normal]
+		你也是来这里探索古老遗迹的吗？
+		
+		[MADELINE right sad]
+		噢不，我想登上山顶。
+		
+		[THEO left excited]
+		哇哦，太疯狂了！
+		
+		[THEO left normal]
+		自我介绍一下，我叫 {+ theo}，是一名来自{>> 0.3}{~}遥远地方{/~}{>>}的探险家！
+		
+		[MADELINE right sad]
+		...{0.2}
+		
+		[THEO left thinking]
+		你不太爱说话，对吧？
+		
+		[THEO left normal]
+		神秘的独行侠，我知道了。{n}我会想象一些与你相符的黑暗背景故事。
+
+	# if the MADELINE has met Theo, but never introduced herself
+	CH2_THEO_INTRO_NEVER_INTRODUCED=
+		[MADELINE right sad]
+		你好 {+ theo}，之前很抱歉。{n}我是 {+MADELINE}。
+		我的脑子有点乱。
+		
+		[THEO left normal]
+		这是一个好地方。
+		这些遗迹的历史能够发人深省。
+		可以说，它让我{n}看到了一面镜子。
+		
+		[MADELINE right distracted]
+		是的...我了解。
+
+		[MADELINE right normal]
+		你来自哪个“{>> 0.5}{~}遥远地方{/~}{>>}”？
+		
+		[THEO left excited]
+		我的好奇小伙伴，我{n}来自于{0.3}{~}神秘{0.4}而充满异国风情的{/~}{0.4}...
+		
+		[THEO left normal]
+		{0.4}西雅图。
+
+		[MADELINE right normal]
+		听起来像是一个特别的地方。
+
+	# added to the start of the CH2_THEO_A if the MADELINE has met and introduced themselves to Theo
+	# (if NEVER_MET and NEVER_INTRODUCED are skipped)
+	CH2_THEO_A_EXT=
+		[THEO left excited]
+		嘿，{+MADELINE}！{n}你做到了！
+
+		{trigger 3 Madeline Approaches}
+
+		{+ CH2_THEO_A}
+
+	# normal conversation once introductions are out of the way
+	CH2_THEO_A=
+		[THEO left normal]
+		爬上这里很艰难，{n}但真的很值得。
+		
+		[THEO left excited]
+		看看这些遗迹！
+		我拍了很多很棒的照片，想不想看？
+		
+		[MADELINE right sad]
+		哦... [MADELINE right normal]当然。
+
+		{trigger 0 Maddy walks to Theo}
+
+		[MADELINE right normal]
+		{+ theo}，这些好棒！
+		
+		[THEO left thinking]
+		也许我最终能通过这些照片收获一千个粉丝。
+
+		{trigger 1 Theo puts away phone}
+		
+		[THEO left normal]
+		哦！我们需要正式地纪念一下这个场景...
+		
+		[THEO left excited]
+		跟我自拍一张！
+		
+		[MADELINE right distracted]
+		啊...我不知道现在这是不是一个好主意...
+		
+		[THEO left normal]
+		快来，很简单。像这样！
+
+		{trigger 2 Theo takes a selfie with Maddy by surprise}
+		
+		[MADELINE right upset]
+		...
+
+	CH2_THEO_B=
+		[THEO left normal]
+		非常抱歉。
+		别担心，我不会把它发布出去的。
+
+		[MADELINE right distracted]
+		...
+		
+		[MADELINE right sad]
+		不，没关系。你可以发布它。
+		我只是{.2}...不太上镜。
+		
+		[THEO left normal]
+		{+MADELINE}，别对自己这么苛刻！
+		不用滤镜谁都不好看。
+
+		{trigger 0 Add filter to selfie}
+		
+		[THEO left thinking]
+		随性，而又优雅。
+
+	CH2_THEO_C=
+		[MADELINE right normal]
+		是什么让你想尝试摄影？
+
+		[THEO left normal]
+		我爷爷是个摄影发烧友。
+
+		[THEO left thinking]
+		据说他在{n}摄影界还挺有名的。
+
+		[THEO left wtf]
+		不知道我能不能达到他那个高度。
+
+		[THEO left normal]
+		但是追逐他的脚步让人感觉很好。
+
+	CH2_THEO_D=
+		[THEO left excited]
+		所以你决定攀爬整座{+mountain}？
+		
+		[MADELINE right normal]
+		是的，我告诉自己要这么做。
+
+		[MADELINE right sad]
+		我违背了对自己许下的诺言。
+		
+		[THEO left excited]
+		人生目标！我懂了。
+		
+		[THEO left normal]
+		我不知道我能不能像你一样登顶，{n}但我还不打算往回走。
+
+	CH2_THEO_E=
+		[THEO left wtf]
+		你有得到这里的什么资料吗？
+		
+		[MADELINE right normal]
+		我没带智能手机。
+		
+		[THEO left wtf]
+		{+MADELINE}。 我甚至不知道怎么回复这个。
+
+	CH2_END_PHONECALL=
+		[MOM_PHONE right normal]
+		你好？
+		
+		[MADELINE_PHONE left distracted]
+		嗨，{+ mom}。
+		
+		[MOM_PHONE right normal]
+		{+MADELINE}，真是个惊喜！
+		你的旅行怎么样？
+		
+		[MADELINE_PHONE left distracted]
+		还好，我只是有点不知所措。
+		
+		[MOM_PHONE right concerned]
+		噢不，你又被吓到了？
+		亲爱的，来做个深呼吸，妈妈在这里。
+		告诉我，是怎么回事？
+
+	CH2_JOURNAL=
+		桌上翻开着一本古老的书，上面已落满灰尘。
+		褪色的书页上写着诗句。
+
+	CH2_POEM=
+		幽灵{n}
+		不属于这个世界{n}
+		但因这个世界而诞生{n}
+		潜藏在秩序之外{n}{n}
+		醒来吧，我的心是堡垒{n}
+		在梦中我易受伤害
+
+# *** Chapter 03 ***
+
+	CH3_OSHIRO_FRONT_DESK=
+		[OSHIRO right normal]
+		欢迎！有什么可为你效劳的吗？
+
+		[MADELINE left surprised]
+		你是...鬼？
+		
+		[OSHIRO right worried]
+		鬼？别傻了。
+		
+		[OSHIRO right normal]
+		我是这座精美山庄的管理员。
+
+		[OSHIRO right worried]
+		欢迎来到{.3} {~}{>> .2}举世闻名的{/~}{>>}{n}{big}天空度假山庄！{/big}
+
+		[OSHIRO right normal]
+		{+ mroshiro}，乐意为你效劳。
+		
+		[OSHIRO right sidehappy]
+		{+thought}一天中来了两位客人！{n}生意终于开始好转了！{+endthought}
+		
+		[OSHIRO right normal]
+		你准备呆多长时间？
+		
+		[MADELINE left normal]
+		哦... 我只是路过。{n}我要去登{+mountain}。
+		这里有后门吗？
+		
+		[OSHIRO right worried]
+		...后门？
+		
+		[OSHIRO right sideworried]
+		{+thought}只是路过？ 这怎么行。{+endthought}
+		
+		[MADELINE left distracted]
+		你知不知道，我还能听到你说话。
+		
+		[OSHIRO right nervous]
+		...
+		
+		[OSHIRO right normal]
+		在任何情况下，我们的后门{n}都仅供山庄工作人员使用。
+
+		[OSHIRO right worried]
+		但是，我们的顶楼总统套房{n}可以看到山顶，风景无敌哦。
+
+		[OSHIRO right normal]
+		是的，住在那里会相当舒服。
+		
+		[MADELINE left distracted]
+		也许我能从那里上到屋顶，{n}然后向下爬到后门？
+		
+		[OSHIRO right sidehappy]
+		{+thought}总统套房，好主意，{+ oshiro}！{+endthought}
+		
+		[OSHIRO right normal]
+		你叫什么名字，我得登记一下。
+		
+		[MADELINE left normal]
+		我是 {+MADELINE}。 
+		
+		[MADELINE left sad]
+		但是再说一遍，我真的没想在这里住下来。
+
+		{trigger 0 Camera zooms back out}
+		
+		[OSHIRO right normal]
+		这边走，{+MS_MADELINE}。
+
+	CH3_GUESTBOOK=
+		看起来，这是一本相当古旧且落满灰尘的留言本。
+		很多页都已损坏或缺失。
+		但是评论内容很精彩...
+		“我们永远不会忘记在这里的时光。”
+		“再没有其他地方能让我感到平静。谢谢。”
+	
+	CH3_OSHIRO_HALLWAY_A=
+		[OSHIRO right normal]
+		请跟紧我，{+MS_MADELINE}。
+		电梯要降到大厅了。
+		
+		[MADELINE left distracted]
+		这座山庄看起来好破败...
+
+		[MADELINE left sad]
+		它真的还在照常营业吗？
+		
+		[OSHIRO right nervous]
+		我们当然在正常营业！
+
+		[OSHIRO right worried]
+		天空度假山庄在旅游旺季{n}可是 24 小时不打烊的！
+
+		[OSHIRO right sideworried]
+		{+thought}看起来好破败？ 她这么说是什么意思？{+endthought}
+
+		[OSHIRO right normal]
+		哦！请允许我为你拿行李。
+		
+		[MADELINE left sad]
+		我的背包？
+
+		[MADELINE left normal]
+		不谢谢，我自己背着就行。
+		
+		[OSHIRO right normal]
+		嗯。非常好。
+		
+		[OSHIRO right sidesuspicious]
+		{+thought}多么古怪的客人。{+endthought}
+
+	CH3_OSHIRO_HALLWAY_B=
+		[OSHIRO right normal]
+		{+MS_MADELINE}，我真的必须请你跟上我。
+
+		[OSHIRO right worried]
+		我在这里经营着世界一流的山庄。{n}我没有时间等待到处瞎逛的客人。
+		
+		[MADELINE left sad]
+		你真的不用等我，{n}我在寻找穿过这个地方的路。
+		
+		[OSHIRO right sideworried]
+		{+thought}{+oshiro}你个笨蛋，客人永远是对的！{+endthought}
+		{+thought}生意最终好转了，{n}你居然开始耍脾气！？{+endthought}
+		
+		[OSHIRO right nervous]
+		啊...当然，{+MS_MADELINE}！
+		我诚挚地道歉，刚才我太不礼貌了。
+
+		[OSHIRO right normal]
+		请慢慢找。
+
+	CH3_MEMO_OPENING=
+		一张老旧的纸从杂物堆中突出来...
+
+	CH3_MEMO=
+		{big}山庄工作人员请注意：{/big}{n}{n}
+		我伤心地通知你，由于现状超出了我们的控制，天空度假山庄将在这个季度后无限期关闭。{n}{n}
+		我很荣幸与你们所有人共事，我们曾共同努力工作，为客人们提供最舒适和难忘的经历。{n}{n}
+		我怀着沉重的心情写下这些内容。这个山庄已成为我的家，山庄的员工和老主顾都是我的家人。 我将深深地怀念你们。{n}{n}
+		-Oshiro先生
+
+	CH3_OSHIRO_CLUTTER0=
+		[OSHIRO left worried]
+		啊！这堆杂物该收拾了！
+
+		{trigger 1 Oshiro paces to the left}
+
+		[OSHIRO left worried flip]
+		这是什么时候发生的！？
+
+		{trigger 2 Oshiro paces back to the right}
+
+		[OSHIRO left worried]
+		我都不知道从哪开始...
+		
+		[MADELINE right sad]
+		{+mroshiro}，你独自经营着这整个山庄吗？
+		
+		[OSHIRO left nervous]
+		是的，{+MS_MADELINE}，{n}我没法一人收拾这些杂乱的东西。
+
+		{trigger 0 Oshiro Collapses}
+		
+		[OSHIRO left drama]
+		简直没得救了。
+
+		[MADELINE right distracted]
+		我不是那个意思...
+
+		[MADELINE right sad]
+		深呼吸，{+MROSHIRO}。 呼吸。
+		只是一次小小的大扫除。
+		
+		[MADELINE right distracted]
+		好吧，比小小的大一点...
+		
+		[MADELINE right normal]
+		但是我可以帮忙！
+		
+		[OSHIRO left normal]
+		你太好了。
+		
+		[OSHIRO left drama]
+		但是我不想为此费心。
+		这是注定要失败的。
+
+	CH3_OSHIRO_CLUTTER0_B=
+		[MADELINE right normal]
+		你经营山庄多久了？
+
+		[OSHIRO left normal]
+		到现在好长时间了。
+
+		[OSHIRO left sideworried]
+		{+thought}生意...很不好。{+endthought}
+
+		[MADELINE right sad]
+		你肯定真心喜欢自己的工作。
+
+		[OSHIRO left normal]
+		噢，是的，{+MS_MADELINE}。
+
+		{trigger 0 Oshiro gets back up}
+
+		[OSHIRO left normal]
+		在酒店业中，我们的热情{n}将使得酒店经营艺术变得完美。
+
+		[OSHIRO left worried]
+		山庄若能真正满足客人的需求，便会{.2}{~}永久地{/~}珍藏在{n}客人的回忆中。
+
+		[MADELINE right normal]
+		就是要这样！
+		现在让我们开始收拾这堆杂物吧。
+
+	CH3_OSHIRO_CLUTTER1=
+		[OSHIRO right normal]
+		虽然还没有开始打扫，但现在{n}我已经感受到了精神上的轻松！
+		这是积极思考的力量！
+		
+		[MADELINE left distracted]
+		呃，实际上...
+		
+		[MADELINE left normal]
+		我帮你清扫了一些杂物。
+		
+		[OSHIRO right normal]
+		噢是的，谢谢你，{+MS_MADELINE}。
+		但是请放松，剩下的就让山庄工作人员来处理吧！
+		
+		[OSHIRO right sidesuspicious]
+		{+thought}{+oshiro}，你个笨蛋。 你要失去她了。{+endthought}
+
+		[OSHIRO right sideworried]
+		{+thought}客人不会想把他们的时间花费在清扫杂物上！{+endthought}
+		
+		[MADELINE left distracted]
+		你还好吗？
+		
+		[OSHIRO right nervous]
+		是的，当然。
+
+		[OSHIRO right worried]
+		这是你到过的最好的山庄，你会看到的！
+		
+		[OSHIRO right sideworried]
+		{+thought}我怎么让自己的问题堆积成这样？{+endthought}
+
+	CH3_OSHIRO_CLUTTER1_B=
+
+		[MADELINE left sad]
+		{+mroshiro}，如果这堆杂物让你感到焦虑，{n}我不介意帮你清扫一下。
+
+		[MADELINE left normal]
+		我还是不能在这里留宿，但我可以在离开前帮下忙。
+
+		[OSHIRO right sideworried]
+		{+thought}她同情你，{+oshiro}。 你太可悲了。{+endthought}
+
+		[MADELINE left upset]
+		...
+
+	CH3_OSHIRO_CLUTTER2=
+		[MADELINE left normal]
+		这里看起来好多了！
+		
+		[MADELINE left distracted]
+		你现在能带我到出口吗？
+
+		[OSHIRO right worried]
+		但是 {+MS_MADELINE}，你基本上还没有享受{n}我们山庄提供的种种优质服务和奢华环境！
+		
+		[OSHIRO right normal]
+		完成清扫后，我们可以好好聊聊。
+
+		[OSHIRO right worried]
+		我很忙！
+
+		[OSHIRO right sidesuspicious]
+		{+thought}是的...现在的年轻人不懂得尊重。{+endthought}
+		
+		[MADELINE left upset]
+		...别客气，哎。
+
+	CH3_OSHIRO_CLUTTER2_B=
+		[MADELINE left angry]
+		你需不需要{.3}我帮忙？
+
+		[OSHIRO right sideworried]
+		{+thought}完了，{+oshiro}。 她恨你了。{+endthought}
+
+		[MADELINE left upset]
+		我{.3}没有... 
+
+		[MADELINE left distracted]
+		很抱歉。 
+
+		[MADELINE left sad]
+		你的山庄...很漂亮。真的是世界一流的。
+		我真希望能住下来。
+
+		[OSHIRO right serious]
+		不用迁就我，{+MS_MADELINE}。
+		我理解。
+
+	CH3_OSHIRO_CLUTTER_ENDING=
+		{anchor bottom}
+		[OSHIRO left normal]
+		你在这里啊！
+		你挺能瞎逛的。
+		
+		[MADELINE right distracted]
+		虽然很困难，但是我还是帮你把所有东西收拾好了。
+		
+		[OSHIRO left normal]
+		天空度假山庄对你的帮助{n}表示感谢，{+MS_MADELINE}。
+		当然，工作人员还是多多少少处理过这些脏乱差的。
+		
+		[MADELINE right upset]
+		噢，当然。是的。
+		
+		[OSHIRO left sideworried]
+		{+thought}好丢脸。{+endthought}
+		
+		[OSHIRO left worried]
+		你一定很想看看自己的房间吧！
+
+		[OSHIRO left normal]
+		坐电梯上去，在走廊的尽头。
+		
+		[MADELINE right upset]
+		当然，管它呢。 
+		告诉我总统套房在哪里。
+		听起来很不错。
+		
+		[OSHIRO left sideworried]
+		{+thought}现在是你最后的机会了，{+oshiro}。 不要失去她。{+endthought}
+
+	CH3_THEO_NEVER_MET=
+		[MADELINE left sad]
+		哦嘿，你是... {0.2}这里的客人？
+
+		{trigger 0 Theo stops trying to pry off the vent cover}
+		
+		[THEO right worried]
+		哇，在这里遇到另一个人，我真是{~}{!}太{/!}{/~}开心了。
+		这个地方真是让我毛骨悚然。
+		
+		[MADELINE left sad]
+		这里肯定有古怪。
+
+		[MADELINE left normal]
+		自我介绍一下，我叫 {+MADELINE}。
+		
+		[THEO right normal]
+		噢，我是 {+theo}。
+		
+		[THEO right thinking]
+		我了解很多令人毛骨悚然的神迹，{n}但是这里也太真实了。
+
+		{+CH3_THEO_ESCAPING}
+
+	CH3_THEO_NEVER_INTRODUCED=
+		[MADELINE left normal]
+		{+theo}！ 你也是这里的“客人”吗？
+
+		{trigger 0 Theo stops trying to pry off the vent cover}
+		
+		[THEO right worried]
+		哇，在这里遇到另一个人，我真是{~}{!}太{/!}{/~}开心了。
+		我了解很多令人毛骨悚然的神迹，{n}但是这里也太真实了。
+		
+		[MADELINE left sad]
+		这里肯定有古怪。
+
+		[MADELINE left normal]
+		自我介绍一下，我叫 {+MADELINE}。
+		我为之前的不近人情道歉，{n}我的脑子有点乱。
+
+		{+CH3_THEO_ESCAPING}
+
+	CH3_THEO_INTRO=
+		[MADELINE left normal]
+		{+theo}！ 你也是这里的“客人”吗？
+
+		{trigger 0 Theo stops trying to pry off the vent cover}
+		
+		[THEO right worried]
+		{+MADELINE}！ 我{~}{!}很{/!}{/~}高兴现在见到你。
+		我了解很多令人毛骨悚然的神迹，{n}但是这里也太真实了。
+
+		{+CH3_THEO_ESCAPING}
+
+	CH3_THEO_ESCAPING=
+		[MADELINE left sad]
+		你与 {+mroshiro} 聊过吗？
+
+		[MADELINE left distracted]
+		我想他真的需要一些帮助。
+
+		{trigger 0 Theo stops trying to pry off the vent cover}
+		
+		[THEO right wtf]
+		你{~}这样认为？{/~} 
+		他是个诡异的老怪物。
+		我猜在我们说话这当口，{n}他正在清扫一个角落来隐藏我们的尸体。
+
+		{trigger 1 Theo goes back to prying off the vent cover}
+		
+		[THEO right worried]
+		我要爬过这个通风孔，{n}它一直往房子里面吹冷气。
+		快跟上！
+		
+		[MADELINE left sad]
+		{+mroshiro} 不太友好，但...{n}我不认为他想要伤害我们。
+		
+		[MADELINE left normal]
+		他只是需要清扫这些杂物。
+		我想帮他。
+		
+		[THEO right worried flip]
+		{+MADELINE}，你的想法很友好，但是很危险。
+		
+		{trigger 2 Theo removes vent cover and it flies off.Theo falls down as it comes off, and gets back up}
+
+		[THEO right worried]
+		我们需要离开这里，并找{n}一个对付{0.2}{*}诡异家伙的专家{/*}。
+		我们还应付不来。
+		
+		[MADELINE left distracted]
+		我想我能理解他。
+
+		[MADELINE left normal]
+		你先出去，我随后赶上你。
+		
+		[THEO right wtf]
+		兄弟，你比我姐姐还固执。
+		我想那是不可能的。
+
+		{trigger 3 Theo walks to Maddy}
+		
+		[THEO right serious]
+		照顾好你自己。
+
+		[MADELINE left normal]
+		谢谢你，{+theo}。 我将在外面跟你碰头。
+
+	CH3_THEO_VENTS=
+		{anchor bottom}
+		[THEO right normal upsidedown]
+		兄弟，这里像个迷宫一样。
+		{+elcreepo} 怎么样了？
+		
+		[MADELINE left sad]
+		我帮他清扫了那一大堆杂物，{n}但是他对此有点不领情。
+		
+		[MADELINE left upset]
+		他还是想说服我留下来。
+		
+		[THEO right wtf upsidedown]
+		{+MADELINE}，说正经的。
+		我的第六感{~}真的非常灵验{/~}。 
+		你应该离开这里。
+		
+		[MADELINE left sad]
+		如果我直接走掉，{+mroshiro} 会伤心的。
+		
+		[MADELINE left distracted]
+		也许实际上我能做{n}一些好事。{.3}至少一次。
+		
+		[THEO right worried upsidedown]
+		忘掉你的{~}宿命{/~}，伙计。
+
+		[THEO right wtf upsidedown]
+		我想那家伙无论如何都会伤心的。
+
+		[THEO right worried upsidedown]
+		你需要考虑自己的安全。
+		
+		[MADELINE left upset]
+		{+theo}。 我会没事的。
+		
+		[THEO right thinking upsidedown]
+		好吧好吧，我不指望你能听进去。
+
+		[THEO right wtf upsidedown]
+		在外面与你相见，你就去自投罗网吧。
+
+	CH3_OSHIRO_BREAKDOWN=
+		{anchor top}
+		[OSHIRO left sideworried]
+		{+thought}就是这样 {+oshiro}，你的最后机会。{+endthought}
+
+		{trigger 0 Oshiro paces}
+		
+		[OSHIRO right sidesuspicious]
+		{+thought}你已经毁掉它了。{n}让一个客人清扫杂物？{+endthought}
+		{+thought}她不会留下来的。{+endthought}
+
+		{trigger 1 Oshiro paces}
+		
+		[OSHIRO left sideworried]
+		{+thought}不，她还在这里。 还有机会！{+endthought}
+
+		{trigger 0 Oshiro paces}
+		
+		[OSHIRO right sidehappy]
+		{+thought}总统套房是关键。{n}它一定会给她留下深刻印象的！{+endthought}
+
+		{trigger 2 Oshiro falls to ground, spawns dust creatures}
+		
+		[OSHIRO left sideworried]
+		{+thought}沉着冷静，{+oshiro}！{+endthought}
+
+		{trigger 3 Enter Madeline}
+		
+		[OSHIRO left nervous]
+		你在这里啊，{+MS_MADELINE}！
+		请快点跟上我！我们快要到了。
+
+	CH3_DIARY=
+		{anchor bottom}
+		这是 {+MROSHIRO} 的日记。
+		最后一篇的时间已经是十几年前了...
+		“从今天起山庄正式关门。Charlotte 组织员工爬山，作为告别远足。我们大多数人都没上过山顶。”
+		“这看起来是个合适的收尾，但是当分别时刻来临时，我还是忍不住最后一次环顾四周。我让他们继续前进，不要等我。”
+		“我很快会赶上他们，{n}在我再次检查一切是否井然有序之后...”
+		“我无法相信我在这里的时光结束了。{n}我现在要去做什么？”
+		“也许我将在这里留上最后一晚，{n}与山庄好好告个别...”
+
+	CH3_OSHIRO_SUITE=
+		{anchor bottom}
+		[OSHIRO left normal]
+		我们到了，一流的总统套房！
+
+		[OSHIRO left worried]
+		准确地说，它是质朴的奢华的完美定义。
+
+		[OSHIRO left normal]
+		我就不打扰了，你尽情体会它的富丽堂皇吧。
+		我知道这里需要感受的地方很多。
+
+		{trigger 3 Madeline walks around the room and looks around}
+		
+		[OSHIRO right nervous]
+		怎么样？你觉得怎么样？
+		
+		[MADELINE left sad]
+		它...啊，它真漂亮。
+		家具看起来很贵...
+
+		[MADELINE left distracted]
+		它非常...宽敞。
+
+		[MADELINE left sad]
+		颜色很高雅。
+
+		[MADELINE left normal]
+		我敢肯定你花了很多心思在里面。
+
+		[OSHIRO right worried]
+		{*}{!}我就知道它会给你留下深刻印象！{/!}{/*}
+
+		[MADELINE left sad]
+		是的。
+
+		[MADELINE left distracted]
+		...
+		所以，我能从这里上到屋顶吗？
+		
+		[OSHIRO right sideworried]
+		{+thought}你个蠢货，你将失去她了！{+endthought}
+		
+		[OSHIRO right nervous]
+		呃，我差点忘了说... 
+		像你这样的尊贵客人可以享受半价{n}入住我们最好的房间！
+		
+		[MADELINE left sad]
+		我...不想留在这里。
+
+		{trigger 0 Badeline appears in the mirror}
+		
+		[OSHIRO right serious]
+		拜托，{+MS_MADELINE}。
+		请留下来。
+		
+		[MADELINE left upset]
+		{+mroshiro}，我已经偏离目标太多...
+
+		{trigger 1 Badeline escapes the mirror}
+		
+		[BADELINE right normal]
+		{+MADELINE}，亲爱的，忘掉这个失败者。
+		
+		[OSHIRO left serious]
+		失败者？ {silent_trigger 6}
+		
+		[BADELINE right upset]
+		接受现实吧，老头子。 
+		这个度假山庄就是一个{*}{!}垃圾场{/!}{/*}{0.3}。
+
+		[BADELINE right yell]
+		没人{*}{!}会{/!}{/*}愿意留在这里。
+		
+		[BADELINE right scoff]
+		必须有人说出这个事实。
+
+		{trigger 4 Madeline steps closer to Oshiro}
+		
+		[MADELINE left sad]
+		她不是那个意思。
+		
+		[OSHIRO right serious]
+		我... 
+
+		[OSHIRO right lostcontrol]
+		我很忙。
+		你走吧，请自便，{+MS_MADELINE}。 {silent_trigger 5 Madeline jumps back}
+		
+		[BADELINE right upset]
+		走吧，{~}{+MS_MADELINE}{/~}，你听到他说什么了。
+
+		{trigger 2 Badeline blasts a hole in the ceiling}
+		
+		[BADELINE left normal]
+		要是没有我，你可怎么办？
+
+	CH3_OSHIRO_SUITE_SAD0=
+		{anchor bottom}
+		[OSHIRO right sideworried]
+		{+Thought}为什么她说我漂亮的山庄是垃圾场？{+endthought}
+
+	CH3_OSHIRO_SUITE_SAD1=
+		{anchor bottom}
+		[OSHIRO right sidesuspicious]
+		{+thought}她怎么敢如此侮辱你。{+endthought}
+
+	CH3_OSHIRO_SUITE_SAD2=
+		{anchor bottom}
+		[OSHIRO right sideworried]
+		{+thought}万一她是对的呢？{+endthought}
+
+	CH3_OSHIRO_SUITE_SAD3=
+		{anchor bottom}
+		[OSHIRO right sidesuspicious]
+		{+thought}她当然是对的。{n}没有她的帮助，你都不会清扫杂物。{+endthought}
+
+	CH3_OSHIRO_SUITE_SAD4=
+		{anchor bottom}
+		[OSHIRO right lostcontrol]
+		{+thought}我尝试过了。 我将尽自己最大的努力。{+endthought}
+
+	CH3_OSHIRO_SUITE_SAD5=
+		{anchor bottom}
+		[OSHIRO right serious]
+		{+thought}{+MS_MADELINE} 只想提供帮助！{+endthought}
+
+	CH3_OSHIRO_SUITE_SAD6=
+		{anchor bottom}
+		[OSHIRO right sideworried]
+		{+Thought}但是为什么她这么无情？{+endthought}
+
+	CH3_OSHIRO_START_CHASE=
+		[BADELINE left normal]
+		我原以为我们摆脱不了他了。
+		你欠我一个人情。 
+
+		[BADELINE left scoff]
+		我会记下来的。
+		
+		[MADELINE right upset]
+		离我远点。
+
+		{trigger 0 Maddy walks away}
+		
+		[BADELINE left upset]
+		我以为你有{~}超{/~}{n}大的决心去登山。
+
+		[BADELINE left scoff]
+		现在你怎么突然变成了那个怪人的治疗师？
+
+		{trigger 1 Maddy turns around}
+		
+		[MADELINE right angry]
+		你为什么不走开？
+
+		{trigger 2 Oshiro enters}
+		
+		[OSHIRO left serious]
+		{+MS_MADELINE}，在你走之前...
+		我要问一个问题...
+		
+		[OSHIRO left serious]
+		为什么你对我这么好，但还是要离开？
+		我做错了什么？
+		
+		[BADELINE right scoff]
+		噢，别再纠结了。你还不懂吗？
+
+		[BADELINE right upset]
+		她只是用她那扭曲的自我意识在帮助别人。
+		
+		[BADELINE right yell]
+		她{*}从不{/*}在意你。
+		
+		[MADELINE right angry]
+		闭嘴！ 
+		
+		[MADELINE right sad]
+		我只是想帮忙。
+		
+		[BADELINE right scoff]
+		你们两个都很可悲。
+
+		{trigger 3 Badeline disappears, Oshiro gets angry}
+
+		[OSHIRO left lostcontrol]
+		可悲！？
+		你是来这里羞辱我的...
+		我不会再对你卑躬屈膝了！
+
+	CH3_OSHIRO_CHASE_END=
+		{anchor top}
+		[MADELINE right surprised]
+		{+mroshiro}，停！
+
+		{trigger 0 Oshiro slams the roof below their feet and it begins shaking}
+		
+		[MADELINE right surprised]
+		我只是想帮忙！
+
+	CH3_ENDING=
+		[OSHIRO left serious]
+		...
+		我已经决定关闭山庄进行维修。
+		二楼的管道系统在漏水...
+		...图书馆杂乱不堪...
+		...更不要说{n}总统套房天花板上的洞了。
+
+		{trigger 0 Turn and pause, turn back}
+
+		[OSHIRO left serious]
+		请让我一个人呆一会。
+
+# *** Chapter 04 ***
+
+	CH4_GRANNY_1=
+		[MADELINE left upset]
+		噢很好，你又开始了。
+
+		{trigger 3 zoom in}
+		
+		[GRANNY right normal]
+		哇哦，没想到能在这里见到你！
+		很高兴你安然无恙。
+		我看到你经过了山庄，{n}你遇到 {+mroshiro} 了吗？
+
+		{trigger 4 maddy turns around}
+		
+		[MADELINE left upset flip]
+		是的，我遇到他了。
+		我帮他清扫了一大堆垃圾，
+		但他后来把我赶了出来。
+
+		{trigger 0 Start Laughing}
+		
+		[GRANNY right laugh]
+		嘿嘿嘿，听起来是个有趣的早晨。
+
+		{trigger 1 Stop Laughing}
+		
+		[GRANNY right normal]
+		{+oshiro} 是个迷失的灵魂，亲爱的。
+		那个地方对他而言不仅仅是个山庄。
+		别让他成为你的阴影。
+
+		{trigger 5 maddy approaches}
+		
+		[MADELINE left angry]
+		你知道我怎么想的吗？
+		我觉得这座{+mountain}让你们都疯了。
+
+		{trigger 2 Wait a beat}
+		
+		[GRANNY right normal]
+		你知道吗，你并不是第一个说这话的人。
+
+		{trigger 0 Start Laughing}
+		
+		[GRANNY right laugh]
+		也许你是对的。
+		我如何知道自己是不是疯了？
+
+		{trigger 1 Stop Laughing}
+		
+		[GRANNY right normal]
+		在我看来，{+mountain}无法{n}带走你内心的任何东西。
+
+		{trigger 0 Start Laughing}
+		
+		[GRANNY right laugh]
+		但是你得有点小疯狂，{n}才能在这里快乐生活，对吗？
+
+		{trigger 2 Wait a beat}
+		
+		[MADELINE left upset]
+		你在说什么？
+
+		{trigger 1 Stop Laughing}
+		
+		[GRANNY right mock]
+		噢，我只是一个喜欢碎碎念的老太婆。
+
+		[GRANNY right normal]
+		你已经放弃了吗？{n}我知道一条回到你车上的捷径。
+
+		{trigger 6 Maddy walks past granny}
+		
+		[MADELINE right upset flip]
+		放弃吧，小姐。
+		我要走到山顶。
+		
+		[GRANNY left normal flip]
+		有时候很难说清楚{n}固执与决然之间的区别，不是吗？
+		你让我想起了年轻时的我。
+
+		{trigger 0 Start Laughing}
+
+		[GRANNY left laugh flip]
+		祝你好运，注意风！
+
+	CH4_GRANNY_2=
+		[MADELINE left upset]
+		你遇到的游客并不多，对吧？
+
+		[GRANNY right normal]
+		不，确实算不上多。
+		但我并不介意与世隔绝。
+
+		[MADELINE left distracted]
+		有时我觉得我也应该与世隔绝。
+
+		[MADELINE left sad]
+		我真的尝试过去了解 {+mroshiro}。{n}我想帮他。
+
+		[GRANNY right normal]
+		{+OSHIRO} 需要从那个山庄走出来。
+		但这事你帮不了什么忙。
+		而且你已经证明了一些事情，没用的。
+
+		[MADELINE left distracted]
+		...
+
+	CH4_GRANNY_3=
+		[MADELINE left sad]
+		住在那个小屋子里面，你会感到寂寞吗？
+
+		[GRANNY right normal]
+		我有朋友，亲爱的。
+		
+		[GRANNY right mock]
+		我也许很疯狂，但我不是隐士。
+
+		[MADELINE left distracted]
+		抱歉。
+		我不是故意乱猜的。
+
+		[GRANNY right normal]
+		我稍微年轻一些的时候，也无法想象{n}自己能在一个地方呆这么长时间。
+		但我后来发现了这座{+MOUNTAIN}。
+		我当时就知道这里将是我的栖身之所。
+
+		[MADELINE left sad]
+		它有什么特殊的吗？
+
+		[GRANNY right normal]
+		{+MOUNTAIN}会向你展示真实的你。
+		无论你是否做好接受的准备。
+		它能让我直面真实的自己。
+
+	CH4_GONDOLA=
+		{anchor top}
+		[UNKNOWN]
+		{+MADELINE}！ 等等我！
+
+		{trigger 0 Enter Theo from above, he falls and lands on the ground face-down}
+		
+		[THEO left nailedit]
+		{%}{*}完美的着陆。{/*}{/%}
+
+		{trigger 1 Check on Theo}
+		
+		[MADELINE right sad]
+		{+theo}！ 你还好吗？
+		
+		[THEO left nailedit]
+		哦。是的。 
+		等我一下。
+
+		{trigger 2 Theo gets up}
+		
+		[THEO left excited]
+		架空缆车！我一直想坐这样的缆车。
+		
+		[MADELINE right sad]
+		它看起来很老旧了，但也许还能用。
+		
+		[MADELINE right distracted]
+		我想不到任何其他穿越这峡谷的方法。
+		
+		[THEO left excited]
+		让我们动起来吧！
+
+		{trigger 3 Look at Lever}
+		
+		[THEO right normal]
+		这根杠杆看起来很重要。
+
+		{trigger 4 Pull Lever}
+		
+		[THEO right normal]
+		每次都很轻松。
+
+		[THEO right thinking]
+		我上辈子可能是个架空缆车的操作员。
+
+		[MADELINE left distracted]
+		你觉得这个东西安全吗？
+
+		[THEO right normal]
+		它肯定没问题。
+
+		{trigger 5 Wait a bit}
+
+		[THEO right normal]
+		最后跟 {+oshiro} 的事情是怎么收尾的？
+
+		[MADELINE left sad]
+		你是对的。
+
+		[MADELINE left distracted]
+		我不应该尝试帮助他。
+
+		[THEO right thinking]
+		我也不喜欢那样说话，但...
+
+		[MADELINE left upset]
+		好了好了...
+		我当时应该听你的。
+
+		[THEO right normal]
+		最重要的是，你没有受到伤害。
+		
+		{trigger 5 Wait a bit}
+		
+		[MADELINE left sad]
+		这里空气好稀薄啊。
+
+		[MADELINE left distracted]
+		我几乎无法呼吸了。
+
+		{trigger 6 Wait for gondola to reach center}
+		
+		[THEO right excited flip]
+		如果不在这里自拍几张，{n}我们会后悔一生的。
+
+		[MADELINE left distracted flip]
+		我甚至无法透过雾气看到地面...
+		我们现在在多高的地方？
+
+		[THEO right thinking flip]
+		别怕，再摆几个造型。
+
+		{trigger 7 Seflie, then gondola stalls out and badeline appears}
+		{anchor bottom}
+		
+		[MADELINE left surprised]
+		那是什么？
+		
+		[THEO right wtf flip]
+		哈。看起来我们失控了。
+
+		{trigger 8 Madeline moves left}
+		
+		[MADELINE left sad]
+		糟糕...
+
+		[THEO right wtf]
+		要是我...
+
+		{trigger 9 lever snaps off}
+		
+		[THEO right worried]
+		哦，麻烦了。
+
+		{trigger 10 tentacles appear}
+		
+		[MADELINE left panic]
+		不，麻烦大了。
+
+		{trigger 11 tentacles grow}
+		
+		[THEO right worried]
+		{+MADELINE}，你冷吗？
+
+		[MADELINE left panic]
+		是的...我只是...
+
+		{trigger 12 Maddy can't breathe}
+
+		[MADELINE left panic]
+		不，我不冷。
+		我无法呼吸。
+		
+		[THEO right serious]
+		你受到惊吓了。
+
+		[MADELINE left angry]
+		你怎么会觉得乘坐这破东西{n}是个好主意？
+
+		[THEO right thinking]
+		嘿，别怪我。
+
+		[THEO right serious]
+		听我的。
+		我爷爷教了我一个处理这种情况的诀窍。
+		闭上眼睛。
+
+		{trigger 13 Play breathing minigame}
+		
+		[THEO right normal]
+		看到了吗？每次都很轻松。
+
+		{trigger 14 Gondola continues to the end station}
+
+		{anchor top}
+		
+		[THEO left normal]
+		感觉好点了吗？
+		
+		[MADELINE right distracted flip]
+		我想是的。谢谢你帮我冷静下来。
+
+		{trigger 15 Wait a bit}
+		
+		[MADELINE right sad flip]
+		你怎么知道我们又要开始移动了？
+		
+		[THEO left normal]
+		噢，我们肯定都要完蛋了。
+
+		{trigger 16 Theo takes out phone}
+		
+		[THEO left excited]
+		噢。我的天啊。
+		{silent_trigger 17 Maddy faces theo}
+		看看这张自拍照！
+
+	CH4_GONDOLA_FEATHER_1=
+		拍下在你面前飘荡的羽毛。
+
+	CH4_GONDOLA_FEATHER_2=
+		看到了吗？
+
+	CH4_GONDOLA_FEATHER_3=
+		好的。
+	
+	CH4_GONDOLA_FEATHER_4=	
+		你的呼吸让那片羽毛一直飘着。
+
+	CH4_GONDOLA_FEATHER_5=
+		平稳缓慢地呼吸，吸气，吐气。
+
+# *** Chapter 05 ***
+
+	CH5_ENTRANCE=
+		[THEO right excited flip]
+		噢兄弟，看看这个地方！
+		觉不觉得很冒险？
+
+		{trigger 0 Maddy turns right}
+
+		[MADELINE left sad]
+		啊，我不知道。 
+		那里太黑了。
+
+		[MADELINE left distracted]
+		更像是恶梦而不是冒险。
+
+		{trigger 1 Theo turns left}
+		
+		[THEO right normal]
+		我要快速看一眼，拍几张照片。
+
+		{trigger 1 Theo turns right}
+
+		[THEO right excited flip]
+		这个地方一定很古老！
+
+		[MADELINE left sad]
+		{+THEO}，等等。
+		
+		[THEO right excited flip]
+		我的 {# FFFF4C}InstaPix{#} 粉丝会爱死这个。
+
+		{trigger 2 Theo leaves}
+		
+		[MADELINE left distracted]
+		结局肯定好不了。
+
+	CH5_PHONE=
+		[MADELINE left sad]
+		啊哦。
+
+		{trigger 0 Maddy walks to phone, ducks to pick it up}
+
+		[MADELINE left distracted]
+		这是 {+THEO} 的手机...
+
+		{trigger 1 Maddy stands back up}
+
+		[MADELINE left determinedclosed]
+		不要惊慌，{+MADELINE}。
+		也许只是从他口袋里面掉出来的。
+		我找到他时再还给他。
+
+	CH5_THEO_MIRROR=
+		[MADELINE left normal]
+		{+theo}！ 你在这里啊！
+		
+		[THEO_MIRROR right excited]
+		{+MADELINE}！ 嘿！
+		
+		[THEO_MIRROR right wtf]
+		...呃，为什么你在镜子里面？
+		
+		[MADELINE left sad]
+		我很确定你才是在镜子那个。
+		发生什么事了？
+		
+		[THEO_MIRROR right wtf]
+		呃，我刚才只是对着镜子自拍...
+		你知道，{~}{# aaaaaa}“这是你在这座古庙中的兄弟 {+THEO}{# aaaaaa}，没什么大不了。”{#}{/~}
+
+		[THEO_MIRROR right thinking]
+		{# ffff9b}\#祝福{#}
+		
+		[THEO_MIRROR right serious]
+		接下来，我醒来时发现自己躺在地上。
+		
+		[MADELINE left sad]
+		那边是什么样子？
+		我怎么才能找到你？
+		
+		[THEO_MIRROR right serious]
+		那里，呃...那里真的又黑又古怪。有...
+		
+		[THEO_MIRROR right wtf]
+		等等，有东西正在靠近。
+		我有一种逃离这里的强烈冲动。
+		
+		[THEO_MIRROR right serious]
+		小心点，好吗？
+
+	CH5_SHADOW_MADDY_0=
+		[MADELINE left angry]
+		{*}嘿！{/*}我们在哪？
+		{!}你对 {+theo} 做了什么？{/!}
+		
+		[BADELINE right scoff]
+		你认为{~}这是{/~}我做的？
+		太可爱了。
+		
+		[BADELINE right upset]
+		宝贝，这正是我警告过你的。
+		
+	CH5_SHADOW_MADDY_1=
+		[MADELINE left angry]
+		不要把责任推到我身上。
+
+		[BADELINE right scoff]
+		你还不懂吗？
+
+		[BADELINE right upset]
+		这{+Mountain}赐予了我这个躯壳。
+
+		[BADELINE right scoff]
+		但我不是存在于你那混乱脑袋里的{*}{/*}{n}唯一的怪念头。
+
+		[BADELINE right normal]
+		不喜欢你看到的吗？
+
+		[BADELINE right scoff]
+		{~}真令人惊讶。{/~}
+		
+		[MADELINE left angry]
+		闭嘴！
+
+		[BADELINE right angry]
+		我{~}尝试{/~}让你停下。
+
+		[BADELINE right yell]
+		看镜子里面，这些都是你的。
+
+		[BADELINE right angry]
+		这座庙只是放大了这{+mountain}的力量。
+
+		[BADELINE right upset]
+		你在这里受到控制，而我没有。
+
+	CH5_SHADOW_MADDY_2=
+		[MADELINE left sad]
+		我不相信你。
+
+		[MADELINE left distracted]
+		如果你是{+PART_OF_ME}，为什么你想要伤害我？
+
+		[BADELINE right angry]
+		可怜的 {+MADELINE}，{~}总是受到伤害的那一个。{/~}
+
+		[BADELINE right yell]
+		我一直都在照顾你，而你却因此而怨恨我。
+
+		[BADELINE right angry]
+		你很没用，你知道的。 
+
+		[MADELINE left angry]
+		如果你真的想保护我，{n}为什么你不{*}解释一下{/*}发生了什么？
+		
+		[BADELINE right angry]
+		就好像你听我说了似的。
+		你从来没有给我机会。
+
+	CH5_SHADOW_MADDY_3=
+		[MADELINE left panic]
+		求你了，帮我离开这里。
+
+		[BADELINE right scoff]
+		{~}现在{/~}你想我救你？
+
+		[MADELINE left panic]
+		为什么你这样做？
+		留在我身边。
+		求你了。
+
+		[BADELINE right angry]
+		不要再让我觉得像怪物。
+		你{~}真的{/~}想知道我为什么不帮忙？
+
+		[BADELINE right yell]
+		因为你{*}活{/*}该。
+
+		[MADELINE left panic]
+		...
+
+		[BADELINE right angry]
+		还觉得你能{~}征服这座{+MOUNTAIN}吗？{/~}
+
+		[MADELINE left angry]
+		{*}闭嘴！{/*}
+
+		{trigger 0 Badeline Leaves}
+
+		[MADELINE left angry]
+		{*}我不需要你的帮助。{/*}
+		我一个人也可以。
+
+	CH5_REFLECTION=
+		[MADELINE right sad]
+		如果这些都是存在于我的脑海中，为什么它们会对我充满敌意？
+		
+		[MADELINE right distracted]
+		这些{*}事情{/*}一直在骚扰我。
+		我是我自己的世界的入侵者。
+
+		{trigger 0 Madeline falls to knees}
+		
+		[MADELINE right panic]
+		{+Theo} 因为我被困在这里的某处。
+		如果我彻底放弃，也许古庙会放他走...
+
+		{trigger 1 Madeline stops panicking}
+
+		[MADELINE_MIRROR left determinedclosed flip]
+		...
+		呼吸。
+		
+		[MADELINE_MIRROR left determined flip]
+		这些都来自于我的内心。
+		站起来，{+MADELINE}。
+
+		{trigger 2 Madeline gets up}
+
+		[MADELINE_MIRROR left determinedclosed flip]
+		想想羽毛。
+		你能拯救 {+theo}。
+
+	CH5_SEE_THEO=
+		[MADELINE left normal]
+		{+theo}！ 谢天谢地，我找到你了。
+		
+		[THEO right excited]
+		{+MADELINE}！ 哇，很高兴看到你。
+
+		{trigger 0 zoom in}
+
+		[MADELINE left sad]
+		你还好吗？
+		
+		[THEO right serious]
+		是的，我很好。 	
+
+		[THEO right thinking]
+		我被困在这个水晶一样的东西里面，困了很长时间。
+
+		[THEO right wtf]
+		你有没有觉得这个地方{n}比你更了解你自己？
+		
+		[MADELINE left distracted]
+		是的...
+		你看到了我内心深处的事物，{n}这让我觉得很尴尬。
+
+		[MADELINE left upset]
+		我试图阻止你。
+		希望那张自拍物有所值。
+
+		[THEO right yolo]
+		自拍总是值得的，老兄。
+
+		[MADELINE left distracted]
+		我不应该发神经的，这不是你的错。
+
+		[MADELINE left sad]
+		我很高兴你平安无事，但你是{n}因我而被困。
+
+		{trigger 1 Madeline turns around}
+
+		[MADELINE left distracted flip]
+		现在这座庙正在{n}向你展示真正的我是什么样的。
+		我很可怕...
+
+		{trigger 2 wait a bit}
+
+		[THEO right thinking]
+		嘿，我们一起在这里面。
+
+		[THEO right wtf]
+		不要搞得好像所有事情都只跟你有关。
+
+		{trigger 3 Madeline turns back, zoom out, room gets brighter}
+
+		[MADELINE left sad]
+		什么意思？
+
+		[THEO right wtf]
+		并不是你把我困在这个水晶里面的。
+		当然，这些怪物来自于你，{n}但古庙也在我周围形成了。
+
+		[THEO right worried]
+		我能{*}感觉到{/*}它。
+		这些{~}眼睛{/~}正盯着我...
+
+		[THEO right wtf]
+		这个水晶来自于我，我知道。
+
+		[THEO right serious]
+		我讨厌提要求，但是现在我真的需要你的帮助。
+
+		{trigger 0 zoom back in}
+
+		[MADELINE left sad]
+		...
+		
+		[MADELINE left distracted]
+		好的。
+
+		[MADELINE left normal]
+		我会支持你的。
+		我会帮你从那个东西里面解脱出来，{n}然后我们一起逃走。
+
+		[MADELINE left sad]
+		我先尽快想办法接近你...
+		
+		[THEO right serious]
+		{+MADELINE}，你现在是我唯一的希望了。
+		我相信你，真的。
+
+		[MADELINE left distracted]
+		希望那不是个错误。
+
+	CH5_SEE_THEO_B=
+		[MADELINE left distracted]
+		如果古庙展示的是真正的我...
+
+		[MADELINE left sad]
+		...那么这是我活该遭罪，不是吗？
+
+		[THEO right wtf]
+		{+ALEX}，你不必对自己如此苛刻。
+
+		[MADELINE left sad]
+		...
+		谁是 {+ALEX}？
+
+		[THEO right thinking]
+		抱歉，我是说 {+MADELINE}。
+
+		[THEO right wtf]
+		但我的看法还是那样。
+		没人应该遭受这些，尤其是你。
+
+		[MADELINE left sad]
+		是的...你是对的。
+
+		[MADELINE left determinedclosed]
+		好了，我能做到。
+
+	CH5_FOUND_THEO=
+		[MADELINE left normal]
+		{+theo}！ 我终于找到了你。
+		
+		[THEO right excited]
+		我就知道你能做到！
+
+		[MADELINE left sad]
+		这并不容易...
+
+		[MADELINE left distracted]
+		这些怪物真的来自于我的内心吗？
+		
+		[THEO right thinking]
+		{+MADELINE}，这是个有意思的问题。
+		我很乐意讨论{n}这些怪物与你的内心之间的关系...
+
+		[THEO right wtf]
+		但是现在，{~}我的{/~}内心真的{n}对被困在这个水晶中感到厌恶了。
+		
+		[MADELINE left sad]
+		噢，好吧。
+
+		[MADELINE left normal]
+		别担心，我会救你出来的。
+
+		{trigger 0 Attempt to break the crystal, but it just falls to the ground}
+		
+		[THEO right thinking]
+		好的，这是一个好的开头，但是...
+		
+		[THEO right wtf]
+		这个水晶像是我的{n}负能量什么的表现。
+
+		[MADELINE left sad]
+		是的，但我们怎么打破它？
+
+		[THEO right serious]
+		如果我知道{~}我为什么{/~}被困在{n}这个东西里面，也许我能逃出来。
+
+		[THEO right wtf]
+		但是我不知道。
+
+		[THEO right thinking]
+		并且我觉得困在我们的这个恶梦空间，{n}它简直深不可测。
+		
+		[THEO right serious]
+		我讨厌这样说，但你可能需要-
+		
+		[MADELINE left angry]
+		{+theo}，想都不要想！
+		我{*}不会{/*}离开你的！
+		
+		[THEO right worried]
+		{~}当然不{/~}，你最好别把我留在这个地方！
+
+		[THEO right thinking]
+		我刚才准备说你可能要背我。
+		
+		[MADELINE left sad]
+		噢。
+		
+		[MADELINE left normal]
+		好，这个我能做得到。
+
+	CH5_THEO_SAVING_LIFT=
+		[THEO left thinking]
+		我的女神，你可以把我举起来的。
+
+	CH5_THEO_SAVING_A=
+		[THEO left excited]
+		{~}好的{/~}，你做到了！
+
+	CH5_THEO_SAVING_NICE=
+		[THEO left thinking]
+		太棒了！打开那道门。
+
+	CH5_THEO_SAVING_B=
+		[THEO left worried]
+		啊哦...我希望你知道如何处理这些东西。
+
+	CH5_THEO_SAVING_C=
+		[THEO left worried]
+		又来一个！？来吧...
+
+	CH5_THEO_SAVING_SWITCH=
+		[THEO left thinking]
+		{+Theo} 又一次拯救了世界。
+
+	CH5_THEO_SAVING_DUNK=
+		[THEO left nailedit]
+		我来帮忙。
+
+	CH5_THEO_SAVING_REALLY=
+		[THEO left thinking]
+		你只是在炫耀。
+
+	CH5_THEO_SAVING_D=
+		[THEO left excited]
+		我们快要成功了，我能感觉得到。
+
+	CH5_THEO_SAVING_E=
+		[THEO left worried]
+		还差一点。 你能做得到，{+MADELINE}。
+
+	CH5_BSIDE_THEO_A=
+		[THEO left excited]
+		这是古庙混音，由{n}你的兄弟{+MIXMASTER_THEO} 创作！
+
+	CH5_BSIDE_THEO_B=
+		[THEO left wtf]
+		这不是原创，是吧？
+
+	CH5_BSIDE_THEO_C=
+		[THEO left wtf]
+		啊，这个很明显不可能是。
+
+# *** Chapter 06 ***
+
+	CH6_THEO_INTRO=
+		[MADELINE right normal]
+		{+theo}，你醒了！
+
+		[THEO left thinking]
+		是我？我表示怀疑...
+
+		[THEO left wtf]
+		我做了一个{~}乱糟糟的{/~}恶梦。
+		
+		[MADELINE right distracted]
+		关于那个...
+
+		[THEO left wtf]
+		等等...
+
+		[THEO left thinking]
+		噢对，现在我全部想起来了。
+
+		[THEO left wtf]
+		那是实际发生的。
+
+		[THEO left serious]
+		感谢你让我们逃出了那里。
+
+		[MADELINE right distracted]
+		我很高兴我们是一起进去的。
+
+		[MADELINE right sad]
+		我不知道我自己能不能做到。
+
+	CH6_THEO_ASK_OUTFOR=
+		[THEO left thinking]
+		我出来多久了？
+	CH6_THEO_SAY_OUTFOR=
+		[THEO left thinking]
+		我出来多久了？
+
+		[MADELINE right sad]
+		肯定有好几小时了...
+
+		[THEO left serious]
+		兄弟，多漫长的旅行啊。
+
+		[MADELINE right upset]
+		给我讲讲。
+
+		[MADELINE right sad]
+		你还好吗？
+
+		[THEO left thinking]
+		我是指除了生存危机之外那些。
+
+		[THEO left wtf]
+		是的，我很好。
+
+	CH6_THEO_ASK_EXPLAIN=
+		[THEO left wtf]
+		这里到底发生了什么？
+	CH6_THEO_SAY_EXPLAIN=
+		[THEO left wtf]
+		很明显这不是一座正常的{+MOUNTAIN}。
+		这里到底发生了什么？
+
+		[MADELINE right sad]
+		我应该早点告诉你的。
+
+		[MADELINE right distracted]
+		回到古老遗迹，{n}{+PART_OF_ME}从镜子中逃了出来。
+		我并不引以为傲的那一个我。
+
+		[MADELINE right upset]
+		我发誓我梦到过它。
+
+		[THEO left serious]
+		你认为这{+MOUNTAIN}让她变得真实？
+
+		[MADELINE right distracted]
+		是的。
+		她一直萦绕在我身旁。
+
+		[MADELINE right sad]
+		她猛烈抨击了 {+MROSHIRO}。
+
+		[MADELINE right distracted]
+		我想可能就是她导致架空缆车失控的。
+
+		[MADELINE right sad]
+		她在那里，在庙里面。
+
+		[THEO left worried]
+		...
+		为什么你什么都没说呢？
+		如果我知道{n}这座{+MOUNTAIN}的力量...，我是不会进入古庙的。
+
+		[MADELINE right upset]		
+		我试图阻止你。	
+		
+		[THEO left wtf]
+		你可以说一下你的{n}{+ST_BAD}邪恶分身{+END_BAD}跑掉了。
+			
+		[MADELINE right upset]
+		得了吧，{+THEO}。
+		你知道这听起来有多疯狂吗？
+
+		[MADELINE right distracted]
+		我自己都不信。
+
+		[THEO left wtf]
+		好吧，好吧。
+		我明白了。
+
+		[THEO left thinking]
+		不过下一次{0.3}跟我直说就好了。
+		我保证会相信你的。
+
+		[MADELINE right distracted]
+		好的。
+
+	CH6_THEO_ASK_THANKYOU=
+		[MADELINE right distracted]
+		当时真要谢谢你相信我。
+	CH6_THEO_SAY_THANKYOU=
+		[MADELINE right distracted]
+		谢谢你，{+THEO}。
+		我是说，谢谢你...当时相信了我。
+
+		[THEO left wtf]
+		相信你倒是容易。
+
+		[THEO left thinking]
+		我倒希望我当时能帮上忙。
+
+		[THEO left wtf]
+		我当时没法脱身，真是毫无用处。
+
+		[MADELINE right sad]
+		你其实帮了大忙。
+
+		[MADELINE right distracted]
+		说实话，没你的帮忙我可办不到。
+
+	CH6_THEO_ASK_TRUST=
+		[MADELINE right distracted] 
+		你为什么那么轻易就相信了我？
+	CH6_THEO_SAY_TRUST=
+		[MADELINE right distracted] 
+		你为什么那么轻易就相信了我？
+
+		[MADELINE right sad]
+		说真的，你几乎不认识我啊。
+
+		[THEO left normal]
+		要听真话吗？
+		你让我想起了我姐姐。
+
+		[MADELINE right normal]
+		真可爱。 
+		她是一个怎样的人？
+
+		[THEO left excited]
+		啊，你一定会喜欢她的！
+
+		[THEO left wtf]
+		说实话，你们一开始可能会合不来...
+
+		[THEO left thinking]
+		但最终你会喜欢她的。
+
+		[THEO left excited]
+		她是{~}货真价实{/~}的摇滚巨星。
+
+		[MADELINE right normal]
+		她是音乐家？
+		太酷了！
+
+		[THEO left thinking]
+		那个，她不是那种{~}货真价实{/~}的摇滚巨星。
+
+		[THEO left normal]
+		{+ALEX} 不管做什么事都...非常出色。
+		她正为成为民权律师而进修呢。
+
+		[MADELINE right normal]
+		哇哦！
+
+		[MADELINE right distracted]
+		你怎么会由我想到她呢？
+
+		[THEO left wtf]
+		你们都深深地沉溺于自己头脑中的小天地里。
+
+		[MADELINE right distracted]
+		哦...
+
+		[THEO left thinking]
+		{+ALEX} 很清楚该朝什么方向前进。
+
+		[THEO left normal]
+		很明显，她一定能达成自己的目标。
+		我能看出你也有这种特质。
+
+		[THEO left wtf]
+		我希望我也能这么评价自己。
+		
+	CH6_THEO_ASK_WHY=
+		[MADELINE right distracted]
+		你的姐妹听起来挺优秀的。我真的让你想起了她？
+	CH6_THEO_SAY_WHY=
+		[MADELINE right distracted]
+		你的姐妹听起来挺优秀的。我真的让你想起了她？
+
+		[THEO left thinking]
+		你开我玩笑的吧？
+
+		[THEO left excited]
+		是你{~}一门心思{/~}{n}要爬这{+MOUNTAIN}的。
+
+		[THEO left thinking]
+		而且你{~}{>> .3}都不知道为什么要爬。{>>}{/~}
+
+		[THEO left excited]
+		真有 {+ALEX} 的风格啊。
+
+		[MADELINE right distracted]
+		...
+
+		[THEO left thinking]
+		我逗你玩呢。
+
+		[THEO left normal]
+		你{~}究竟{/~}为什么要爬这{+MOUNTAIN}？
+
+		[MADELINE right distracted]
+		你说得对，我都不知道为什么要爬。
+
+		[MADELINE right sad]
+		我{0.4}必须要换换{*}心情。{/*}
+		我陷入了一个死循环。
+
+		[THEO left normal]
+		你这是白费唇舌。
+		我遇到过许多次让人崩溃的情形。
+
+		[MADELINE right sad]
+		工作其实没什么，我只不过...
+
+		[MADELINE right distracted]
+		...
+
+		[MADELINE right upset]
+		我都要疯了。
+		我总是忍不住要想{n}无关紧要的闲事。
+
+		[MADELINE right sad]
+		我脑海里总是放不下这些早已过了几千年的蠢{.4}{>> .3}{*}事{/*}{>>}{.4}{n}。
+
+		[MADELINE right angry]
+		我应该{*}放下那些事。{/*} 
+		{*}那些根本不重要。{/*}
+
+		{trigger 0 Wait a bit}
+
+		[MADELINE right distracted]
+		...
+		我很擅长摆出一副精神十足的派头，可{n}事实是我几乎撑不住了。
+
+		[THEO left worried]
+		我很遗憾，那确实挺难熬的。
+		我能帮上忙吗？
+
+		[MADELINE right sad]
+		你已经帮了忙了。
+		大声说出来感觉挺好的。
+
+		[THEO left wtf]
+		你不跟其他人谈谈这事？
+
+		[MADELINE right distracted]
+		不...不谈。
+
+		[MADELINE right sad]
+		我妈妈知道我有些抑郁，{n}因此还慌了手脚。
+
+		[MADELINE right distracted]
+		也就是那样了。
+
+		[THEO left thinking]
+		难怪你觉得难以脱身。
+		
+		[THEO left wtf]
+		你拿什么...来应对？
+
+		[MADELINE right upset]
+		大多数时候，我就靠喝酒。
+		在网上冲人发火。
+
+	CH6_THEO_ASK_DEPRESSION=
+		[THEO left serious]
+		你介不介意说说抑郁是怎么样的？
+	CH6_THEO_SAY_DEPRESSION=
+		[THEO left serious]
+		你介不介意说说抑郁是怎么样的？
+
+		[MADELINE right distracted]
+		...
+
+		[MADELINE right upset]
+		糟透了。
+
+		[THEO left wtf]
+		是啊，但那是种{~}什么样的感觉？{/~}
+
+		[THEO left serious]
+		{+ALEX} 也深受其害。{n}我是真心想了解。
+
+		[THEO left normal]
+		如果你希望的话，我们也可以聊点别的。
+
+		[MADELINE right distracted]
+		...
+		就像是...
+
+		[MADELINE right sad]
+		我沉入大洋底部。
+		任何方向都看不到东西。
+
+		[MADELINE right distracted]
+		就像是幽闭恐惧症，但同时却觉得无遮无挡。
+		...
+
+		{trigger 0 Wait a bit}
+
+		[MADELINE right sad]
+		我还记得正常的感觉。
+		但现在那种感觉找不着了，{n}不管我怎么试都找不回来。
+		
+		[MADELINE right distracted]
+		话又说回来，我可能一直都是这么糟糕的状态。
+		只需一些扎心窝的事情就能把情绪引出来。
+
+		[MADELINE right upset]
+		我一定是有什么地方不对劲。
+
+		[THEO left serious]
+		不管发生过什么事，我敢肯定，那不是你的错。
+
+		{trigger 0 Wait a bit}
+
+		[MADELINE right sad]
+		我猜，我当时认为自己能...
+
+		[MADELINE right distracted]
+		我不知道。
+		我就那么在这个深渊里飘飘沉沉，{n}随意游动。
+
+		[MADELINE right sad]
+		希望自己能找到点{*}什么。{/*}
+
+		[MADELINE right distracted]
+		我就是为这个原因才来这儿的。
+		...
+		可我自己摆脱不了。
+
+		[MADELINE right upset]
+		我是名副其实地一直地在{*}跟自己做斗争{/*}。
+
+		[MADELINE right distracted]
+		也许这全是毫无意义的。
+
+		{trigger 0 Wait a bit}
+
+		[THEO left serious]
+		{+MADELINE}，你{~}刚刚{/~}救了我的命。
+
+		[THEO left wtf]
+		这可不是毫无意义的。
+
+		[MADELINE right distracted]
+		对哦...
+
+		{trigger 0 Wait a bit}
+
+		[THEO left wtf]
+		听着，你是个好人。
+
+		[THEO left thinking]
+		你有点紧张，但你是个{~}好人。{/~}
+
+		[THEO left wtf]
+		我认为你只不过是想摆脱{n}自己陷入的僵局而已。
+
+		[THEO left excited]
+		这个理由就足以让人爬这{+MOUNTAIN}了！
+
+		[MADELINE right distracted]
+		可能吧。
+
+		[MADELINE right sad]
+		那个...谢谢你这么说。
+
+		{trigger 0 Wait a bit}
+
+		[THEO left normal]
+		这个一直在给你惹麻烦的{+PART_OF_YOU}，{n}或许天性如此。
+
+		[MADELINE right upset]
+		所以你觉得我永远没法摆脱她了？
+
+		[THEO left normal]
+		这个么，她不是也没法摆脱你么。
+
+		[MADELINE right upset]
+		这话一点帮助也{*}没有{/*}。
+
+	CH6_THEO_ASK_DEFENSE=
+		[THEO left wtf]
+		所以你希望摧毁这个{+PART_OF_YOU}？
+	CH6_THEO_SAY_DEFENSE=
+		[THEO left wtf]
+		所以你希望摧毁这个{+PART_OF_YOU}？
+		那样不会伤害到你自己吗？
+
+		[MADELINE right sad]
+		如果我不做点什么，她会一直欺负我。
+
+		[MADELINE right upset]
+		她说她会保护我，{n}但显然那是假话。
+
+		[THEO left normal]
+		也许她觉得她在保护你。
+		也许她的保护机制有点...{n}扭曲。
+		
+		[MADELINE right upset]
+		老实说，谁在乎呢？
+		她总是想控制我。
+		我讨厌这样。
+
+		[THEO left wtf]
+		也许你能学着去控制她。
+
+		[MADELINE right distracted]
+		那片羽毛帮了大忙。
+
+		[MADELINE right sad]
+		谢谢你教我。
+
+		[THEO left thinking]
+		只不过是我爷爷智慧的结晶之一。
+
+	CH6_THEO_ASK_VACATION=
+		[THEO left thinking]
+		为什么不去度个假？
+	CH6_THEO_SAY_VACATION=
+		[THEO left thinking]
+		为什么不去度个假？
+
+		[MADELINE right sad]
+		你什么意思？
+
+		[THEO left normal]
+		伙计，你想换换环境，{n}才来{>> .2}爬这{+MOUNTAIN}{>>}...
+
+		[THEO left thinking]
+		为什么不去做点放松的事情？
+
+		[THEO left wtf]
+		去夏威夷，或者{0.3}去泡个澡。
+
+		[MADELINE right sad]
+		...
+		我觉得自己想要做成点什么事。
+
+		[THEO left wtf]
+		听起来你已经有{n}不少事要忙。
+
+		[MADELINE right distracted]
+		我猜这是有点极端。
+		不过我的个性就这样。
+		我需要挑战。
+
+		[MADELINE right sad]
+		我做事情不接受随随便便。
+		要么不做，要么全力以赴。
+
+	CH6_THEO_ASK_FAMILY=
+		[MADELINE right normal]
+		你为什么来这{+MOUNTAIN}？
+	CH6_THEO_SAY_FAMILY=
+		[MADELINE right normal]
+		你呢？
+		你为什么来这{+MOUNTAIN}？
+
+		[THEO left normal]
+		我就是四处走走。
+		
+		[THEO left thinking]
+		跟平常一样。
+
+		[THEO left normal]
+		我是在西雅图开始做这份新工作的。
+		我本以为自己{~}终于{/~}弄明白了我这辈子{n}该做什么...
+
+		[THEO left wtf]
+		但我讨厌这份工作。
+
+		[THEO left thinking]
+		一周之后我就辞职了，坐长途汽车去了加拿大。
+
+		[THEO left wtf]
+		我就是有股冲动...{n}想把自己丢到个找不着北的地方。
+		...
+		现在我大声说出来了，{n}才意识到这话听起来有多古怪。
+
+		[MADELINE right sad]
+		听起来你压力挺大啊。
+
+		[THEO left thinking]
+		也不是。
+		人人都对我很有耐心。
+
+		[THEO left serious]
+		不过我猜，是我自己把{n}太多压力压在了{~}自己身上。{/~}
+
+		[THEO left wtf]
+		其他人总是认为我拿自己跟{n}{+ALEX} 比较，但我{~}发誓{/~}问题根本不在这儿。
+		我只不过是担心永远也弄不明白{n}自己该去哪儿。
+		
+		[MADELINE right distracted]
+		你说过你想要去个谁都不知道的地方。
+
+		[MADELINE right normal]		
+		也许你应该接受现状。
+
+		[THEO left serious]
+		可能吧。
+
+	CH6_THEO_ASK_GRANDPA=
+		[MADELINE right normal]
+		你跟你的爷爷亲近吗？
+	CH6_THEO_SAY_GRANDPA=
+		[MADELINE right normal]
+		你跟你的爷爷亲近吗？
+
+		[THEO left serious]
+		对哦...我曾经是。
+
+		[MADELINE right distracted]
+		哦...我很抱歉。
+
+		[THEO left serious]
+		没事。事实如此。
+
+		[MADELINE right distracted]
+		...
+
+		[THEO left wtf]
+		我只能看开一点。
+
+		[THEO left serious]
+		我的人生很有意义，{n}因为他也希望如此。
+
+		{trigger 0 Wait a bit}
+
+		[MADELINE right sad]
+		我很抱歉，{+THEO}。
+
+		[THEO left serious]
+		多谢了。
+
+	CH6_THEO_ASK_TIPS=
+		[MADELINE right normal]
+		你还从你爷爷身上学到了什么？
+	CH6_THEO_SAY_TIPS=
+		[MADELINE right normal]
+		你还从你爷爷身上学到了什么？
+
+		[THEO left excited]
+		很多东西！
+
+		[THEO left normal]
+		其实，正是他让我了解了{n}{+CELESTE_MOUNTAIN}的事。
+		他总是说，这个地方改变了他的人生。
+
+		[THEO left thinking]
+		我从西雅图辞职后，{n}才意识到这地方跟我的羁绊有多强烈。
+		我仿佛听得到他要我来这儿。
+
+		[THEO left wtf]
+		爷爷说过这{+MOUNTAIN}很{~}“特别”。{/~}
+
+		[MADELINE right sad]
+		你觉得他跟我们一样到过那个古庙？
+
+		[MADELINE right normal]
+		你觉得他了解这{n}{+MOUNTAIN}的力量吗？
+		
+		[THEO left thinking]
+		他从没说起过这里发生的事。
+
+		[MADELINE right distracted]
+		我不认为你爷爷的状况有我这么糟...
+
+		[MADELINE right sad]
+		他的经历可能没那么...激烈。
+
+		[THEO left wtf]
+		在我出生前他就发现这{+MOUNTAIN}了。
+		我不知道他在那之前是什么样。
+
+		[THEO left serious]
+		我猜想他可能在这里了解了自我...
+
+	CH6_THEO_ASK_TEMPLE=
+		[THEO left wtf]
+		你觉得是谁修了这座古庙？
+	CH6_THEO_SAY_TEMPLE=
+		[THEO left wtf]
+		你觉得是谁修了这座古庙？
+
+		[MADELINE right sad]
+		它看起来很古老...
+		它一定比这{+MOUNTAIN}上的任何东西都古老。{n}超过度假山庄、遗迹、城市...
+
+		[THEO left serious]
+		这里有着悠久的历史。
+
+		[MADELINE right distracted]
+		是的。 
+		这{+MOUNTAIN}被许多人赋予了{n}许多意义。
+
+		[MADELINE right normal]
+		我开始有些理解为什么那个{n}疯老太婆要住这里了。
+
+		[THEO left excited]
+		你也遇到她了？
+
+		[THEO left thinking]
+		她是怎么回事？
+
+		[MADELINE right upset]
+		我认为她只不过生性刻薄而已。
+
+		[MADELINE right distracted]
+		...但她在这里住得挺满意的。
+
+	CH6_THEO_ASK_SELFIE=
+		[MADELINE right normal]
+		我想要记住这个夜晚...
+	CH6_THEO_SAY_SELFIE=
+		[MADELINE right normal]
+		你知道吗？
+		我想要记住这个夜晚...
+		我们来张自拍吧！
+
+		[THEO left normal]
+		我还以为你不打算提出来了呢。
+
+		{trigger 1 selfie sequence}
+
+		[MADELINE right normal]
+		不管如何，我现在{n}感觉好极了。
+
+		[THEO left wtf]
+		等等...
+
+		[THEO left excited]
+		你明天就能登顶！
+
+		[MADELINE right upset]
+		别咒自己。
+
+		[MADELINE right distracted]
+		...没错，我很兴奋。
+
+		[MADELINE right normal]
+		我已经做好准备，把这一切都放下了。
+
+		[THEO left normal]
+		我会为你打气的。
+		我们应该睡了。
+
+		[MADELINE right normal]
+		好的，晚安，{+THEO}。
+
+		[MADELINE right distracted]
+		多谢你...没有介意。
+
+		[THEO left thinking]
+		我还能说什么？这就是天生的。
+
+	CH6_THEO_ASK_SLEEP=
+		[MADELINE right distracted]
+		我应该睡了。
+	CH6_THEO_SAY_SLEEP=
+		[MADELINE right distracted]
+		我应该睡了。
+
+		[THEO left thinking]
+		你确定不想继续聊了吗？
+
+		[THEO left normal]
+		我也累了，不过我们还能聊很多东西。
+
+	CH6_THEO_ASK_SLEEP_CONFIRM=
+		[MADELINE right sad]
+		是的，抱歉，我真的很累了。
+	CH6_THEO_SAY_SLEEP_CONFIRM=
+		[MADELINE right sad]
+		是的，抱歉，我真的很累了。
+
+		{+CH6_THEO_SAY_SELFIE}
+
+	CH6_THEO_ASK_SLEEP_CANCEL=
+		[MADELINE right normal]
+		你说得对，我迟点睡也没关系。
+	CH6_THEO_SAY_SLEEP_CANCEL=
+		[MADELINE right sad]
+		你说得对，我迟点睡也没关系。
+
+	CH6_DREAMING=
+		[MADELINE left normal]
+		北边的灯火真是太美了。
+
+		[BADELINE right worried]
+		是的...真漂亮...
+		...
+
+		[BADELINE right worriedAlt]
+		我们在哪儿？
+
+		[MADELINE left sad]
+		我们需要谈谈。
+
+		[BADELINE right worried]
+		...好的。
+
+		[MADELINE left distracted]
+		我终于弄明白你的身份了。
+
+		[MADELINE left sad]
+		你并不是我的真实幻像。
+
+		[BADELINE right worriedAlt]
+		...我不是么？
+
+		[MADELINE left sad]
+		你是我需要放下的一切。
+		你残酷、妄想、充满控制欲...
+
+		[BADELINE right worriedAlt]
+		你为什么要说那种话？
+
+		[MADELINE left normal]
+		不，没事！
+		我现在明白了。
+		我不再需要你了。
+
+		[BADELINE right worried]
+		所以，你这是要...抛弃我？
+
+		[MADELINE left sad]
+		我是要放你离开。
+
+		[MADELINE left normal]
+		我们都会变得更快乐。
+
+		[BADELINE right worried]
+		你可真...
+
+		[BADELINE right sad]
+		真...
+
+		[BADELINE right freakA pop]
+		{silent_trigger 0 Tentacles Appear}
+		...真傻呀！
+
+		[BADELINE right freakB pop]
+		{silent_trigger 0 Tentacles Appear More}
+		你以为你可以就这么{~}抛下我吗？{/~}
+		{silent_trigger 0 Tentacles Appear moooore}
+		你以为你可以把一切都罪过都推到我的头上吗？
+		{silent_trigger 0 Tentacles Appear EVEN MORE}
+		你以为自己{~}比我强{/~}？
+
+		[BADELINE right freakC pop]
+		{silent_trigger 1 Tentacles grab Madeline}
+		{!}{*}回答我！{/*}{/!}
+
+		[MADELINE left panic]
+		冷静下来，拜托...
+		
+		{trigger 4 start circling the player}
+		[BADELINE right freakC_cont]
+		{!}{*}冷静下来？{/*}{/!}
+
+		[MADELINE left determinedclosed]
+		用力呼吸，{+MADELINE}。
+		用上那根羽毛。
+
+		{trigger 2 Feather minigame}
+
+		[BADELINE right freakBAlt]
+		你打算通过{~}想象一根羽毛{/~}来阻止我吗？
+
+		{trigger 3 Destroy feather minigame}
+
+		[BADELINE right freakBAlt]
+		你并不{*}比我强。{/*}
+		你也{*}没本事{/*}爬这{+MOUNTAIN}。
+
+		[BADELINE right freakCAlt pop]
+		是时候接受事实了。
+
+	CH6_THEO_WATCHOUT=
+		[THEO left worried]
+		{+MADELINE}，出什么事了！？
+
+	CH6_REFLECT_AFTER=
+		[MADELINE left sad]
+		我曾如此地接近。
+
+		[MADELINE left panic]
+		现在都已经过去了。
+		她为什么不肯放过我？
+
+		[MADELINE left angry]
+		我{*}恨{/*}她。
+		...
+
+		[MADELINE left distracted]
+		...
+		但是她就是{+PART_OF_ME}。
+		我永远也无法摆脱她。
+
+		[MADELINE left sad]
+		她是对的。
+		我没本事爬这{+MOUNTAIN}。
+
+	CH6_OLDLADY=
+		[GRANNY right normal]
+		哦，又见面了。
+
+		[MADELINE left upset]
+		你当然在这里。
+
+		{trigger 0 Zoom in}
+		
+		[GRANNY right mock]
+		这就放弃了，我知道了。
+		
+		[MADELINE left upset]
+		不，我掉下来了。
+		结束了。
+
+		[GRANNY right normal]
+		或许这样最好。
+		这{+MOUNTAIN}是无情的。
+
+		[MADELINE left upset]
+		是啊，我懂了。 
+		我不够强壮，爬不了你这座破{+MOUNTAIN}。
+
+		[MADELINE left distracted]
+		如果你乐意，可以再嘲笑我一次。
+
+		{trigger 1 Start laughing}
+		
+		[MADELINE left upset]
+		我不是真的在嘲笑你...
+
+		{trigger 2 Stop laughing}
+		
+		[GRANNY right normal]
+		有时候你必须懂得适时放手。
+		你会挺过去的。
+
+		{trigger 3 Maddy walks right}
+		
+		[MADELINE left angry]
+		你知道吗？
+		在爬出这个山洞的时候，{n}我有大量的时间去思考...	
+		而且这事我已经{*}放下了。{/*}
+
+		{trigger 4 Maddy walks left}
+
+		[MADELINE left upset flip]
+		那个{0.4}{+PART_OF_ME}{0.4}是对的，这事我做不到。
+
+		[MADELINE left panic flip]
+		我要...回家去过我忧伤的生活，{n}永远{.4}悲惨下去。
+
+		{trigger 5 Wait a bit}
+		
+		[GRANNY right normal]
+		你显然还没放下。
+
+		{trigger 6 Maddy turns right}
+		
+		[MADELINE left upset]
+		闭嘴，我知道。
+
+		[MADELINE left distracted]
+		我不想放弃...
+		但不管我多努力尝试，{n}她都能在我的每一步搞破坏。
+		
+		[GRANNY right normal]
+		好多孩子都来这儿爬{n}这座{+mountain}，最后都放弃了。
+		可惜你掉下来了，{n}我当时都有点相信你能爬上去了。
+
+		[MADELINE left sad]
+		凭什么我就这么特殊？
+
+		[GRANNY right normal]
+		我从没见过对自己那么愤怒的人。
+
+		{trigger 1 Start lauging}
+
+		[GRANNY right laugh]
+		说实话，我还以为你登顶就是为了{n}给自己找不自在呢。
+
+		[MADELINE left upset]
+		天啊，谢谢了。
+
+		{trigger 2 Stop laughing}
+
+		[GRANNY right normal]
+		你谈论的这个女孩，{n}听起来她在扯你后腿。
+		跟她谈谈吧。
+		弄明白她为什么那么害怕。
+		
+		[MADELINE left sad]
+		你觉得她...害怕？
+
+		[MADELINE left distracted]
+		我猜自己从没那么想过。
+		
+		[GRANNY right normal]
+		别浪费我们俩的时间了，直接{~}问她。{/~}
+		你还有什么可怕的？
+
+	CH6_OLDLADY_B=
+		[MADELINE left sad]
+		我不知道该怎么找到她...
+
+		[GRANNY right normal]
+		她就是{+PART_OF_YOU}，对吗？
+		如果你去找她，要不了多久就能找到。
+
+		[MADELINE left upset]
+		...所以，你听说过这{+MOUNTAIN}的力量。
+
+		[GRANNY right normal]
+		我当然知道，我在这里生活。
+		我提醒过你。
+
+		[MADELINE left upset]
+		你需要提高自己的表达技巧。
+
+		[GRANNY right normal]
+		对人们来说，一窥真相是件好事。
+		即使大多数人没法接受自己看到的真相。
+		即使你跑回你的车上，驾车回家{n}也没什么好害臊的。
+		总有一天你会准备好的，{n}到那时你再回来就是了。
+
+		[MADELINE left distracted]
+		...
+		不。
+
+		[MADELINE left sad]
+		我这次一定要坚持到底。
+		不能再逃跑了。
+
+		[GRANNY right normal]
+		我看也是。
+		祝你好运。
+
+	CH6_OLDLADY_C=
+		[MADELINE left sad]
+		你怎么能忍受这里的生活？
+		一直面对这种局面不会难以忍受的吗？
+
+		[GRANNY right normal]
+		是啊，你永远也无法真正地适应。
+		但那能让我警醒。
+		我就喜欢这一点。
+
+		[MADELINE left sad]
+		但这{+MOUNTAIN}形成的对抗...太激烈了。
+
+		[GRANNY right normal]
+		当然，它可不会跟你兜圈子。
+		{+CELESTE_MOUNTAIN}有治愈人心的力量，亲爱的。
+		治愈的第一步就是解决问题。{n}
+		那可不轻松。
+
+		[MADELINE left upset]
+		给我讲讲。
+
+	CH6_BOSS_START=
+		[BADELINE right angry flip]
+		在找我吗？
+		我还以为你不想再见我了呢。
+
+		[MADELINE left sad]
+		是我错了。
+		我很抱歉。
+
+		[BADELINE right scoff flip]
+		你以为自己{~}看穿了一切。{/~}
+
+		[BADELINE right angry flip]
+		你以为你不需要我。
+		
+		[MADELINE left upset]
+		我说了我很抱歉。
+
+		[MADELINE left sad]
+		这事必须得翻篇儿了。
+
+		{trigger 0 Badeline floats, zooms in}
+
+		[BADELINE right yell]
+		你还指望我相信你？
+
+		[MADELINE left angry]
+		你也不是一点错都没有啊。
+		...
+
+		[MADELINE left determinedclosed]
+		不过我知道你害怕了。
+		
+		{trigger 1 Maddy steps forward}
+		
+		[MADELINE left sad]
+		你瞧，我们俩都沦落到谷底了。
+		没必要吵架了。
+
+		[BADELINE right scoff]
+		我还能继续挖。
+
+		[BADELINE right angry]
+		我能让我们都沉到地球中心去。
+
+		[MADELINE left sad]
+		那有什么意义？
+
+		[MADELINE left together]
+		{s 4}我们一起{.6}[MADELINE left togetherZoom]从这里爬出去吧。
+		
+		[BADELINE right yell]
+		到我这儿来，我会让你后悔的。
+
+	CH6_BOSS_TIRED_A=
+		[BADELINE right angry]
+		我帮过你的忙。
+
+	CH6_BOSS_TIRED_B=
+		[BADELINE right yell]
+		你算不上是{*}登山者。{/*}
+
+	CH6_BOSS_TIRED_C=
+		[BADELINE right yell]
+		{*}我只是在努力帮你！{/*}
+
+	CH6_BOSS_MIDDLE=
+		[BADELINE right yell]
+		这些本来都不会{*}发生的，{/*}{n}只要你当初{*}听了我的话！{/*}
+
+	CH6_BOSS_ENDING=
+		[BADELINE right sigh flip]
+		好吧。
+		你赢了
+
+		{silent_trigger 0 Music starts}
+
+		[BADELINE right worried flip]
+		我感觉你其实不需要我。
+
+		[BADELINE right worriedAlt flip]
+		如果你希望我走开，我会努力的。
+		
+		[MADELINE left distracted]
+		我可没那么想。
+		我现在比任何时候都需要你的帮助。
+
+		[MADELINE left sad]
+		求你了。我们齐心协力渡过难关吧。
+
+		[BADELINE right worried flip]
+		齐心协力？
+
+		[BADELINE right worriedAlt flip]
+		你开玩笑的，对吧？
+
+		{trigger 1 Madeline puts hand on Badeline}
+
+		[MADELINE left sad]
+		害怕没什么错。
+
+		{trigger 2 Badeline calms down}
+
+		[BADELINE right worried flip]
+		...
+
+	CH6_ENDING=
+		[MADELINE left surprised]
+		我们是怎么做到的？
+
+		[MADELINE left normal]
+		如果照这样爬下去，或许{n}我们能登顶！
+		
+		[BADELINE right worriedAlt]
+		你还想爬这{+MOUNTAIN}？
+
+		[BADELINE right worried]
+		我们为什么还要回到那上面去呢？
+
+		{trigger 0 Old Lady enters right}
+
+		[GRANNY right normal]
+		看到你俩好好相处，真叫人高兴。
+
+		[MADELINE left sad]
+		嘿，多谢你之前让我醒悟了。
+
+		[GRANNY right normal]
+		别客气。
+		偶尔能帮上点忙，我也挺高兴的。
+
+		{portrait none}
+		{*}{+MADELINE}！！！{/*}
+
+		{trigger 1 Theo enters left}
+		
+		[THEO left worried]
+		{+MADELINE}！ 你没事了！
+
+		[THEO left wtf]
+		我跑下去帮忙来着，可你看上去好像没事。
+		
+		[MADELINE right normal]
+		谢谢你，{+THEO}。
+
+		[MADELINE right distracted]
+		说实话，也许我正需要摔那么一下。
+		
+		{trigger 8 theo stops being tired}
+		[THEO left wtf]
+		这不就是你提到过的{+PART_OF_YOU}？
+
+		[THEO left excited]
+		她就像是走可爱风的哥特文化爱好者 {+MADELINE}！
+
+		[BADELINE right angry]
+		你好。
+
+		[MADELINE right sad]
+		你是对的，{+THEO}。
+		我不该害怕她。
+
+		[MADELINE right normal]
+		如果我和她齐心协力，我觉得我们{n}仍能爬到最后。
+
+		[THEO left excited]
+		那太好了！
+
+		[BADELINE right angry]
+		等等，{0.4}{*}不{/*}。
+
+		[BADELINE right worried]
+		...我可没答应这个。
+
+		{trigger 2 Madeline turns to the right}
+
+		[BADELINE right worriedAlt]
+		你说过我们应该先商量一下。
+
+		[MADELINE left sad]
+		你说得对。
+		我明白你被吓坏了。
+		
+		[MADELINE left distracted]
+		可我们都知道，这是我们想要达成的事。
+
+		[MADELINE left normal]
+		我们必须得试最后一次。
+
+		{trigger 7 Theo raises fist}
+
+		[THEO left yolo]
+		耶！你能行！
+		
+		[BADELINE right worried]
+		我不知道...
+
+		[BADELINE right worriedAlt]
+		我们就差那么一点，然后我们，呃，就掉下来了...
+
+		[BADELINE right worried]
+		这{+MOUNTAIN}把我们分开了。
+
+		[MADELINE left upset]
+		是啊，就是那么回事。
+
+		[MADELINE left sad]
+		不过我们一定能渡过这个难关。
+		我们肯定能行。
+
+		{trigger 5 Wait a bit}
+
+		[GRANNY right normal]
+		这主意不坏。
+
+		{trigger 3 badeline turns right}
+
+		[GRANNY right normal]
+		我要提醒你们，爬上去依旧不轻松。
+		但我很惊讶，你们能一路跌跌撞撞{n}爬这么远。
+		我估计，只要你们合作就能成。
+
+		[BADELINE right worried flip]
+		...
+
+		{trigger 4 badeline turns left}
+
+		[BADELINE right worriedAlt]
+		好的。 
+
+		[BADELINE right worried]
+		我会试试的。
+
+		{trigger 5 Wait a bit}
+
+		[THEO left normal]
+		我能帮上忙吗？
+
+		{trigger 6 Madeline turns to the left}
+
+		[MADELINE right distracted]
+		我都为你付出那么多了。
+
+		[THEO left wtf]
+		至少让我帮你拿包吧。
+
+		[MADELINE right normal]
+		好主意。
+
+		[MADELINE right determined]
+		{>> 0.2}要不了多久了。{>>}
+
+# *** Chapter 07 ***
+
+	CH7_HEIGHT_START=地平面
+	CH7_HEIGHT_0={X} 米
+ 	CH7_HEIGHT_1={X} 米
+	CH7_HEIGHT_2={X} 米
+	CH7_HEIGHT_3={X} 米
+	CH7_HEIGHT_4={X} 米
+	CH7_HEIGHT_5={X} 米
+
+	# Mountain Base -> Forsaken City
+	CH7_ASCEND_0=
+		[MADELINE left normal]
+		我们已经掌握诀窍了。
+
+		[BADELINE right upset]
+		如果你要那么说的话...
+
+		[MADELINE left determined]
+		这座山根本不在话下。
+
+		[BADELINE right worried]
+		别咒自己了。
+
+	# Forsaken City -> Old Site
+	CH7_ASCEND_1=
+		[MADELINE left normal]
+		你感觉怎么样？
+
+		[BADELINE right upset]
+		我很好。
+
+		[BADELINE right worried]
+		我只不过在等着{0.4}出问题呢。
+
+		[MADELINE left sad]
+		不管出了什么事，{n}我都会和你一起面对。
+
+		[BADELINE right worried]
+		你知道真正让人害怕的是什么吗？
+		
+		[BADELINE right upset]
+		我开始相信你了。
+
+	# Old Site -> Celestial Resort
+	CH7_ASCEND_2=
+		[BADELINE right normal]
+		刚才做得漂亮。
+
+		[MADELINE left surprised]
+		瞧瞧你！
+
+		[MADELINE left normal]
+		{+ST_BAD}乐天派 女士{+END_BAD}就在这儿呢。
+
+		[MADELINE left determined]
+		你可真给力。
+
+		[BADELINE right angry]
+		别过分依赖你的运气。
+		
+	# Celestial Resort -> Cliffside
+	CH7_ASCEND_3=
+		[MADELINE left distracted]
+		我希望 {+MROSHIRO} 平安无事。
+
+		[BADELINE right angry]
+		为什么？他把你当垃圾一样扫地出门。
+
+		[MADELINE left sad]
+		是的，但是我还是会关心他。
+		
+		[MADELINE left upset]
+		而且你也没必要像过去那样跟他粗声粗气。
+
+		[BADELINE right angry]
+		随便你。
+
+		[MADELINE left sad]
+		我是说真的。你攻击性太强了。
+
+		[BADELINE right angry]
+		嗯，{~}你{/~}把太多能量用在坏人身上，{n}而这些人最终只会伤害你。
+
+		[MADELINE left distracted]
+		{+MROSHIRO} 不是坏人...
+
+		[BADELINE right yell]
+		他已经变成了{*}怪物！{/*}
+		他曾试图{*}伤害{/*}你！
+
+		[BADELINE right worriedAlt]
+		结果现在你还替他说话？
+
+		[MADELINE left distracted]
+		我不是在为他说话...
+
+		[MADELINE left sad]
+		我是站在你这边的。{n}我也对他很生气。
+		如果你没有强行赶我出来，{n}我现在可能仍在山庄里。
+
+		[MADELINE left distracted]
+		...但我仍然希望他平安。
+
+		[BADELINE right worried]
+		...
+
+		[BADELINE right worriedAlt]
+		好吧...
+		...我很抱歉...
+
+		[BADELINE right worried]
+		...跟 {+MROSHIRO} 吵架。
+
+		[MADELINE left distracted]
+		多谢了。 
+		
+		[MADELINE left sad]
+		现在都过去了。
+		
+	# Cliffside -> Temple
+	CH7_ASCEND_4=
+		[MADELINE left surprised]
+		真够悬的。
+
+		[BADELINE right worried]
+		是啊，我都不确信我们能躲过来。
+
+		[MADELINE left distracted]
+		也许你是对的。
+
+		[MADELINE left sad]
+		也许这次登山{~}确实{/~}太危险了。
+
+		[BADELINE right worried]
+		...
+
+		[BADELINE right angry]
+		{*}不。{/*}
+		是我错了。
+		我们能爬上这座{+MOUNTAIN}。
+
+		[BADELINE right normal]
+		我会照顾你的...
+
+		[BADELINE right worried]
+		...还有...
+
+		[BADELINE right worriedAlt]
+		...我相信你。
+
+		[MADELINE left sad]
+		这对我挺重要的。
+		
+	# Temple -> Summit
+	CH7_ASCEND_5=
+		[MADELINE left determined]
+		就是这里了，最后的冲刺。
+
+		[MADELINE left normal]
+		我们已经离得很近了。{n}我们一定会成功的！
+
+		[BADELINE right worriedAlt]
+		对哦...
+
+		[BADELINE right worried]
+		...
+
+		[MADELINE left sad]
+		出什么事了？
+
+		[BADELINE right worried]
+		...我只是...
+		...
+
+		[BADELINE right worriedAlt]
+		...我很抱歉。 
+		是我连累了你。
+
+		[BADELINE right worried]
+		我应该学会信任你。
+
+		[MADELINE left distracted]
+		那不是你的错。
+		我也试过抛下你。
+		说实话，{n}我这一辈子都在试着抛下你。
+
+		[MADELINE left sad]
+		我很抱歉。
+		我本该再早一点去试着了解你。
+		我太骄傲，太顽固，或者{*}有别的心结。{/*}
+
+		[BADELINE right worriedAlt]
+		我们浪费了太多的时间和精力。
+
+		[BADELINE right worried]
+		...
+
+		[BADELINE right worriedAlt]
+		至少我们终于能把这事说开了。
+
+		[MADELINE left sad]
+		对哦...
+
+		[MADELINE left normal]
+		我很高兴这{+MOUNTAIN}带你走了出来。
+		我觉得我们能把这个放下了。
+		如果我们能一起登上这座{+MOUNTAIN}，{n}我们就无所不能。
+		
+		[BADELINE right worried]
+		要是我们失败了怎么办？
+
+		[MADELINE left normal]
+		那我也能接受。
+
+		[BADELINE right worriedAlt]
+		你能接受？
+
+		[MADELINE left sad]
+		当然了。
+		
+		[MADELINE left normal]
+		只要我们努力尝试，我就很高兴了。
+
+		[MADELINE left sad]
+		我真的必须要这么做。
+		
+		[BADELINE right upset]
+		我终于开始理解其中的缘由了。
+
+		[BADELINE right normal]
+		让我们完成它吧。
+
+	CH7_ENDING=
+		[BADELINE left normal]
+		我们真的做到了。
+		我简直不敢相信！
+
+		[MADELINE right surprised flip]
+		哇哦！太漂亮了！
+		
+		[MADELINE right normal flip]
+		看看我们走了多远了！
+
+		{trigger 1 Madeline sits down}
+
+		[BADELINE left normal]
+		我真高兴我能先看到这个，然后才...
+
+		[BADELINE left worriedAlt]
+		嗯，然后我才...
+
+		[MADELINE right distracted flip]
+		噢，好吧。
+
+		[MADELINE right sad flip]
+		一旦我们走下那座{+MOUNTAIN}，你就不能{n}再跟我说话了...
+		至少不是像这样说话。
+
+		[BADELINE left worried]
+		是的。
+
+		[BADELINE left upset]
+		我知道我们最后还是要回家的。
+		但是舍弃这具躯壳还是很让人害怕。
+
+		{trigger 2 Badeline moves beside Maddy as camera begins panning right}
+
+		[MADELINE left sad]
+		但你还是会存在。
+		我们来这里以前，你就是{+PART_OF_ME}。
+
+		[BADELINE left upset]
+		是的，我知道。
+		但是，我会依靠你来倾听我的想法。
+
+		[BADELINE left worried]
+		...哪怕我再也不能自己跟你说话了。
+
+		[BADELINE left worriedAlt]
+		我只是...不能回到过去那种样子了。
+		来这{+MOUNTAIN}之前的样子。
+
+		[MADELINE right sad flip]
+		别担心，我也不能回到以前那个样子。
+		我真心希望我们从今往后能齐心协力。
+
+		[BADELINE left upset]
+		我相信你。
+
+		[BADELINE left worriedAlt]
+		...可我还是紧张。
+
+		{trigger 0 Wait a bit}
+		
+		[BADELINE left upset]
+		那么...现在要怎么做？
+
+		[MADELINE right distracted flip]
+		...
+
+		[MADELINE right normal flip]
+		就让我们沉浸于当下吧。
+
+	CH7_BSIDE_ASCEND=
+		[BADELINE left freakA]
+		太棒了！
+
+		[MADELINE right surprised]
+		真不敢相信我们居然做到了！
+
+		[BADELINE left freakA]
+		没有什么能够阻挡我们！
+
+		[MADELINE right upset]
+		你刚才吓死我了。
+
+	CH7_CSIDE_OLDLADY=
+		[GRANNY right normal]
+		你们居然挺过来了，真是令人难以置信，不是吗？
+
+		[GRANNY right laugh]
+		努力的过程还是挺有意思的。
+
+		[GRANNY right normal]
+		答应我，一定要照顾好自己，好吗？
+
+	CH7_CSIDE_OLDLADY_B=
+		[GRANNY right normal]
+		这个嘛，
+		你又在等什么？
+
+# *** Epilogue ***
+
+	EP_CABIN=
+		[GRANNY right normal]
+		欢迎回来。
+
+		[THEO right excited]
+		{+MADELINE}！
+		你们登顶了吗？
+		
+		{trigger 0 Badeline emerges}
+
+		[MADELINE left normal]
+		是的，我们登顶了。
+		真是不可思议。
+
+		[GRANNY right normal]
+		美极了，不是吗？
+
+		[BADELINE left upset]
+		我之前不认为那么做是值得的...
+
+		[BADELINE left normal]
+		但确实不虚此行。
+
+		[THEO right thinking]
+		我真应该把我的手机给你，{n}好让你能拍下{~}最美的自拍。{/~}
+
+		{trigger 1 Fade out, hear knock on door, fade in and Oshiro enters}
+
+		[OSHIRO left normal]
+		大家晚上好。
+
+		[BADELINE right angry]
+		{~}你{/~}在这里做什么？
+
+		[OSHIRO left normal]
+		有只小鸟告诉我那里会有聚会。
+
+		[OSHIRO left sidehappy]
+		{+thought}小鸟带我来的，真是魔幻至极！{+endthought}
+
+		[OSHIRO left drama]
+		但要是我不受欢迎，我这就走人。
+
+		[MADELINE right sad]
+		请留下来把，{+MROSHIRO}。
+
+		[MADELINE right normal]
+		很高兴见到你。
+
+		{trigger 2 Oshiro settles in}
+
+		[GRANNY left normal]
+		这可是我第一次见到你{n}走出你的那家山庄，{+OSHIRO}。
+		你能来，我很荣幸。
+		{+MADELINE}，这是我们用她采集的所有草莓{n}烤出的馅饼。
+
+		[OSHIRO left normal]
+		啊，那真是太棒了，{+MS_MADELINE}。
+
+		[THEO right normal]
+		我自小就没吃过{# F94A4A}草莓馅饼{#}。
+
+		[THEO right excited]
+		一定会美妙无比！
+
+		[BADELINE right scoff]
+		别期望太高了，她烘培的手艺可不怎么样。
+
+		{trigger 3 Maddy Turns}
+
+		[MADELINE left normal]
+		你还说我登山也不行呢。
+
+		[BADELINE right worried]
+		那倒是。
+
+		{trigger 3 Maddy Turns}
+
+		[MADELINE right sad]
+		我不敢保证那有他们说的那么好吃，{+THEO}。
+
+		[MADELINE right normal]
+		不过我会尽力而为。
+
+	EP_PIE_START=
+		[MADELINE right normal]
+		那么？
+		味道如何？
+
+	EP_PIE_DISAPPOINTED=
+		[THEO left wtf]
+		我猜从技术上说这算是个馅饼...
+
+		[OSHIRO left worried]
+		这是开玩笑吗，{+MS_MADELINE}？
+
+		[GRANNY left normal]
+		草莓馅饼里本该有草莓，{n}亲爱的。
+
+	EP_PIE_GROSSED_OUT=
+		[THEO left wtf]
+		{+MADELINE}，我超级感谢你能为我们制作馅饼...
+		但我想我吃不了这个。
+
+		[GRANNY left normal]
+		理念对了就行。
+
+		[BADELINE left angry]
+		你们这些人就是不懂享用美食。
+		我自己会全吃了的。
+
+		[MADELINE right sad]
+		你不需要这样。
+
+		[BADELINE left worried]
+		是的...这个威胁没什么魄力。
+
+	EP_PIE_OKAY=
+		[OSHIRO left normal]
+		重要的是，你尽了最大努力，{n}{+MS_MADELINE}。
+
+		[BADELINE left angry]
+		谁把这家伙请来的？
+
+		[THEO left thinking]
+		得了，真的很不错。
+
+		[GRANNY left normal]
+		我吃过更糟的。
+
+		[THEO left normal]
+		多谢你做的馅饼，{+MADELINE}。
+
+	EP_PIE_REALLY_GOOD=
+		[GRANNY left normal]
+		真让我大开眼界！
+		这都跟我的烘焙技术不相上下了。
+
+		[BADELINE left normal]
+		还不错。
+
+		[THEO left excited]
+		我勒个去！
+
+		[THEO left normal]
+		这真是太好吃了。
+
+		[OSHIRO left normal]
+		{+MS_MADELINE}，你能否为我们的重新开业宴会{n}提供餐饮呢？
+		
+		[THEO left excited]
+		我能带一块回家给 {+ALEX} 吗？
+		她尝了之后一定高兴死了。
+		
+	EP_PIE_AMAZING=
+		[THEO left wtf]
+		{+MADELINE}。
+
+		[THEO left excited]
+		这是我尝过的最好吃的东西！
+
+		[MADELINE right sad]
+		得了。说实话吧。
+
+		[GRANNY left normal]
+		他说得对，亲爱的。
+		这太好吃了。
+
+		[OSHIRO left normal]
+		真是无与伦比，{+MS_MADELINE}。
+
+		[OSHIRO left worried]
+		{~}一场让味蕾起舞的交响乐！{/~}
+
+		[BADELINE left scoff]
+		我能来分一点功劳吗？
+
+		[MADELINE right normal]
+		好吧，谢谢你们。
+		我在这上面花了不少心思。
+		
+# *** Appendix ***
+
+	APP_INTRO=
+		大约一年后...
+
+	APP_OLDLADY_A=
+		[GRANNY right normal]
+		嗨，小娃娃们！
+		很高兴又见面了。
+
+		{trigger 0}
+		
+		[GRANNY right normal flip]
+		这就是我在电话里跟你说过的洞窟，{n}{silent_trigger 1}跟我来吧。
+		{silent_trigger 1}
+
+	APP_OLDLADY_B=
+		[MADELINE left sad]
+		这是什么地方？！
+
+		[GRANNY right normal]
+		这条路通向{+MOUNTAIN}的中心。
+		你说过你想回来往更深处探索......
+
+		{trigger 0 start laughing}
+
+		[GRANNY right laugh]
+		没有比这更深的了！
+
+		{trigger 1 stop laughing}
+
+		[GRANNY right normal]
+		还是要小心点。
+		一旦你接近{+MOUNTAIN}之心到这种距离，{n}它的力量就会带给你完全不同的影响。
+
+		[MADELINE left sad]
+		是的，我已经注意到了其中的一些...
+
+		[GRANNY right normal]
+		祝你在那里面好运。
+
+	APP_OLDLADY_C=
+		[GRANNY right normal]
+		另外那个{+PART_OF_YOU}去哪儿了？
+
+		[MADELINE left sad]
+		我不知道...我还等着她现在出现呢。
+
+		[MADELINE left distracted]
+		也许我已经改变了，{n}她不再是{+PART_OF_ME}了。
+
+		[GRANNY right normal]
+		又或许你们合为一体了。
+		也许现在即使是这{n}{+MOUNTAIN}也没那么容易把你们分开了。
+		我打赌她仍以某种形式与你共存。
+
+		[MADELINE left normal]
+		我更喜欢那个说法。
+
+		[MADELINE left distracted]
+		不过我仍然希望能跟她谈谈。
+
+	APP_OLDLADY_D=
+		[GRANNY right normal]
+		你跟 {+THEO} 还有联系吗？
+
+		[MADELINE left normal]
+		是的，他去温哥华度假了。
+		我们一起好好玩了一段时间。
+
+		[GRANNY right normal]
+		他现在忙什么呢？
+
+		[MADELINE left normal]
+		他现在回到加州跟家人团聚了。
+		他希望他妹妹读完法学院时能在她身边。
+
+		[MADELINE left sad]
+		听起来很紧张，不过他希望能在那里支持她。
+
+		[GRANNY right normal]
+		他看上去是个不错的年轻人。
+
+	APP_OLDLADY_E=
+		[MADELINE left normal]
+		好久不见。你怎么样？
+
+		[GRANNY right normal]
+		啊，老样子。
+
+		{trigger 0 start laughing}
+
+		[GRANNY right laugh]
+		以我来说，算是非常老了。
+
+		{trigger 1 end laughing}
+
+		[GRANNY right normal]
+		我不会变年轻，这一点是肯定的。
+		有时候，光是不让灯灭掉{n}就要用掉我所有的体力。
+		不过，这{+MOUNTAIN}仍然能让我保持心境清明。
+		
+		[GRANNY right mock]
+		短时间内我还没准备魂归天堂呢。
+
+		[MADELINE left normal]
+		我想也是。
+
+		[MADELINE left sad]
+		保重。
+
+	APP_OLDLADY_LOCKED=
+		[MADELINE left sad]
+		前面那扇门打不开。
+		有别的路进去吗？
+
+		[GRANNY right normal]
+		恐怕没有，亲爱的。
+		
+		[GRANNY right mock]
+		你以为这{+MOUNTAIN}从现在开始会{n}对你手下留情么？
+		
+		[GRANNY right normal]
+		我猜它是觉得你没准备好。
+
+		[MADELINE left sad]
+		好吧，{+CELESTE_MOUNTAIN}可能是有点{~}古怪且神秘。{/~}
+
+		[MADELINE left upset]
+		可现在你跟我说，它还能够{~}“思考”{/~}？
+
+		[GRANNY right normal]
+		不是像你我那样思考。
+		更像是...河流思考如何入海那样。
+		如果你乐意，这话听起来也是挺疯狂的。
+
+		[MADELINE left upset]
+		我才没有蠢到去怀疑你说的话。
+
+		[MADELINE left sad]
+		我该如何让它相信我准备好了？
+
+		[GRANNY right normal]
+		我哪儿知道。
+		我会回顾自己的过往，真正用心思考。
+		{+CELESTE_MOUNTAIN}一定能教给你更多东西。
+
+	APP_ENDING=
+		...就这样？
+		这一切的核心就是这个？
+		多么空洞...深广...
+		感觉又让人有些怀念。
+		让人觉得平静。
+
+# Crystal Hearts
+
+	POEM_FC=	不知所谓的机器
+	POEM_FCR=	划破天际线
+
+	POEM_OS=	复活
+	POEM_OSR=	暗夜月升
+
+	POEM_CR=	分散与失落
+	POEM_CRR=	因果好循环
+
+	POEM_CS=	风暴之眼
+	POEM_CSR=	金羽毛
+
+	POEM_T=		平静与坠落
+	POEM_TR=	镜像魔法
+
+	POEM_TF=	沉重与脆弱
+	POEM_TFR=	地球中心
+
+	POEM_TS=	粉色朝霞
+	POEM_TSR=	不再逃避
+
+	POEM_MC=	山之心
+	POEM_MCR=	道别
+
+# File Menu
+	FILE_VARIANT_OFF=异变模式：关
+	FILE_VARIANT_ON=异变模式：开
+
+# Chapter Titles
+	AREA_10=再见
+
+# Checkpoints
+	CHECKPOINT_9_0=一个人
+	CHECKPOINT_9_1=能源
+	CHECKPOINT_9_2=铭记
+	CHECKPOINT_9_3=视界线
+	CHECKPOINT_9_4=决心
+	CHECKPOINT_9_5=倔强
+	CHECKPOINT_9_6=和谐
+	CHECKPOINT_9_7=再见
+
+# Postcards
+	POSTCARD_VARIANTS=哇，你成功了！{n}{n}现在可以从“文件选择”菜单访问{# 9B3FB5}异变{#}。
+
+# Stats
+	STATS_TITLE=全局 Steam 统计数据
+	STAT_BERRIES=草莓数
+	STAT_DEATHS=死亡次数
+	STAT_DASHES=突进次数
+	STAT_GOLDBERRIES=金色浆果数
+	STAT_PICO_BERRIES=PICO-8 草莓数
+	STAT_PICO_DEATHS=PICO-8 死亡次数
+	STAT_PICO_COMPLETES=PICO-8 通关次数
+
+# Game Paused
+	MENU_PAUSE_VARIANT=异变
+	MENU_RETURN_TITLE=返回地图
+	MENU_RETURN_CONTINUE=是
+	MENU_RETURN_CANCEL=取消
+	MENU_RETURN_INFO=
+		返回地图将保存您的进度{n}
+		但您必须从上一个记录点重新开始游戏
+
+	MENU_RESTART_TITLE=重新开始当前章节？
+	MENU_RESTART_CONTINUE=是
+	MENU_RESTART_CANCEL=取消
+
+# Assist UI
+	MENU_ASSIST_SUBTITLE=协助
+
+# Variant UI
+	MENU_VARIANT_TITLE=异变
+	MENU_VARIANT_SUBTITLE=异变
+	MENU_VARIANT_MIRROR=镜像模式
+	MENU_VARIANT_360DASHING=360 度突进
+	MENU_ASSIST_DASH_ASSIST=Dash Assist
+	MENU_VARIANT_INVISMOTION=看不见的运动
+	MENU_VARIANT_PLAYASBADELINE=另一个你
+	MENU_VARIANT_NOGRABBING=禁止抓握
+	MENU_VARIANT_LOWFRICTION=低摩擦力
+	MENU_VARIANT_SUPERDASHING=超级突进
+	MENU_VARIANT_HICCUPS=打嗝
+
+# Names
+	GRANNY={# 66ea3a}奶奶{#}
+	PART_OF_HER={# 66ea3a}{~}另一个她{/~}{#}
+	PART_OF_GRANNY={# 66ea3a}{~}另一个奶奶{/~}{#}
+
+# Chapter 09
+	CH9_GRAVESTONE=
+		[MADELINE left sad]
+		{+GRANNY}...
+		[MADELINE left sadder]
+		真不敢相信你就这么走了，老太婆。
+		
+		[MADELINE left distracted]
+		好吧，{0.2}这也没什么。
+		
+		[MADELINE left sadder]
+		听起来就像你在寄给我的{n}上一封信里说了再见。
+		
+		{silent_trigger 0 Step Forward}
+		
+		[MADELINE left sadder]
+		这不公平。我需要你。
+		
+		[MADELINE left angry]
+		你让我完全没有任何心里准备。
+		
+		{trigger 1 Badeline Appears}
+		
+		[BADELINE left scoff]
+		你想让她干吗，道歉吗？
+		
+		[BADELINE left upset]
+		她走了。
+		
+		[BADELINE left angry]
+		而你甚至没有出席葬礼。
+		
+		{trigger 2 Sit Down}
+		
+		[MADELINE left distracted]
+		我知道，我就是... 做不到。
+		
+		[MADELINE left sadder]
+		我感觉自己要崩溃了。
+		
+		[MADELINE left sadder]
+		对不起，{+GRANNY}。
+		
+		[BADELINE left angry]
+		{~}说抱歉{/~}也不能让她回来。
+		
+		[MADELINE left sadder]
+		你说得对。
+		
+		[MADELINE left sad]
+		我来这儿真是太自私了。
+
+	CH9_FLYING_TO_THE_MOON=
+		[BADELINE right concerned]
+		我们要去哪儿，{+MADELINE}？
+		
+		[MADELINE left sad]
+		我们必须跟着那只鸟。
+		它是{+PART_OF_GRANNY}，就像你是{+PART_OF_ME}。
+		
+		[BADELINE right worried]
+		我还以为它只是她的宠物什么的...
+		
+		[MADELINE left distracted]
+		它{~}肯定{/~}不止是宠物。
+		
+		[MADELINE left sad]
+		那只鸟当时在{+MOUNTAIN}上一直照看着我{n}，就像{+GRANNY}一样。
+		
+		[BADELINE right concerned]
+		{+MADELINE}...我讨厌这样说，但...
+		
+		[BADELINE right worriedAlt]
+		你只是拒绝接受事实。
+		
+		[BADELINE right worried]
+		它只是一只鸟。
+		
+		[MADELINE left upset]
+		别说了，帮我一次行不行？
+
+	CH9_LANDING=
+		[BADELINE left worried]
+		呃... 我们现在很高了。
+		
+		{trigger 0 Badeline turns}
+		
+		[BADELINE left worriedAlt flip]
+		从这里看，那座山就像一个小丘了。
+		
+		{trigger 0 Badeline turns}
+		
+		[BADELINE left worried]
+		我们真的该往回走了。
+		
+		[MADELINE right upset]
+		我们没时间争论这个。
+		
+		[BADELINE left concerned]
+		你在这上面呼吸怎么样？
+		
+		[MADELINE right sad]
+		{+GRANNY} 希望我们跟着她。
+		
+		[MADELINE right distracted]
+		我们不能再让她失望了。
+		
+		[BADELINE left angryAlt]
+		{~}...它是一只鸟，{/~} {+MADELINE}。
+		
+		[BADELINE left angry]
+		{+GRANNY} 已经走了。
+		
+		[MADELINE right angry]
+		你{*}真的{/*}认为那只是一只普通的鸟？
+		
+		[MADELINE right sad]
+		它是 {+PART_OF_HER}，不知怎么地，它还在这里。
+		
+		[MADELINE right distracted]
+		也许有办法能让她回来。
+		
+		[MADELINE right sad]
+		我必须... 做些什么。
+		
+		[BADELINE left angryAlt]
+		...
+		这事我帮不了你。
+		
+		[MADELINE right angry]
+		那就{*}走开！{/*}
+		
+		{trigger 1 Badeline Vanishes}
+		
+		[MADELINE left determined]
+		别担心，{+GRANNY}。
+		我不会放弃的。
+
+	CH9_FAKE_HEART=
+		[MADELINE left distracted]
+		等等，不...
+		
+		[MADELINE left sad]
+		这不可能就是结局。
+
+	CH9_KEEP_GOING=
+		[MADELINE left sadder]
+		{+GRANNY} 还在某个地方。
+		
+		{trigger 0 Step Forward}
+		
+		[MADELINE left determined]
+		这意味着我需要继续前进。
+
+	CH9_MISS_THE_BIRD=
+		[MADELINE left angry]
+		{~}喂！{/~}
+		你不想要我帮你了吗？
+		
+		[MADELINE left sadder]
+		...你不想再看到我了吗，{+GRANNY}？
+		
+		{trigger 0 stand up，face left }
+		
+		[MADELINE left sad flip]
+		我不明白。
+		
+		[MADELINE left distracted flip]
+		你是在考验我吗？
+		你只是害怕求助？
+		
+		[MADELINE left sadder flip]
+		也许 {+PART_OF_ME} 是对的。{n}也许它{~}只是{/~}一只鸟。
+		...
+		
+		{trigger 1 take a step left}
+		
+		[MADELINE left sad flip]
+		除非...
+		
+		{trigger 2 take a step right}
+		
+		[MADELINE left surprised]
+		那只鸟不想让我救 {+GRANNY}。
+		
+		{trigger 3 black hole flickers }
+		
+		[MADELINE left sadder]
+		它在试图阻止我，就像 {+PART_OF_ME} 一样。
+		我一个人在这上面。
+		
+		{trigger 4 black hole flickers more，tiles to crack into the sci-fi one}
+		
+		[MADELINE left angry]
+		好吧，我们不需要他们的帮助，对吗 {+GRANNY}？
+		
+		[MADELINE left together]
+		别担心，我不会放弃的！
+		我要抓住那只笨鸟，放你自由。
+
+	CH9_HELPING_HAND=
+		[MADELINE left upset]
+		我可没要你帮我。
+		
+		[BADELINE right angryAlt]
+		我知道，但是算了吧 {+MADELINE}...
+		仔细想清楚。
+		
+		[BADELINE right angry]
+		你什么时候才算完？
+		
+		{trigger 0 Madeline faces away}
+		
+		[MADELINE left determined flip]
+		我要找到 {+GRANNY}！。
+		然后，也许我能带她回家...
+		
+		[MADELINE left sadder flip]
+		哪怕整个宇宙与我为敌。
+		
+		[BADELINE right worriedAlt]
+		...
+		
+		[BADELINE right worried]
+		你不怕在这上面迷路吗？
+		
+		[MADELINE left angry flip]
+		我会找到路的。
+		
+		[BADELINE right worriedAlt]
+		...
+		
+		[BADELINE right worried]
+		听我说，{+MADELINE}...
+		
+		[BADELINE right worriedAlt]
+		我们不过是在{~}太空{/~}中追逐一只{~}神秘的鸟{/~}。
+		
+		[BADELINE right upset]
+		这一切都不真实。
+		
+		[BADELINE right concerned]
+		你是在做梦。
+		
+		[MADELINE left sadder flip]
+		...
+		
+		[BADELINE right concerned]
+		...她走了。
+		
+		[BADELINE right upset]
+		是时候醒醒了。
+		
+		[MADELINE left sadder flip]
+		但如果我们醒了，我们就再也见不到 {+GRANNY} 了...
+		
+		{trigger 1 Madeline faces towards badeline}
+		
+		[MADELINE left angry]
+		我不敢相信你希望她永远消失！
+		你总是这么{*}自私{/*}。
+		
+		[BADELINE right angry]
+		...
+		
+		[BADELINE right angryAlt]
+		首先，它是一只{~}鸟{/~}。
+		我们不{~}知道{/~}那是不是她。
+		
+		[BADELINE right yell]
+		{*}其次{/*}...
+		...
+		
+		[BADELINE right sigh]
+		...我们需要退一步。
+		
+		{trigger 2 Madeline steps towards badeline}
+		
+		[MADELINE left angry]
+		不，{!}{*}你{/*}{/!}才需要退一步。
+		{*}我一定要做这件事。{/*}
+		
+		[MADELINE left sad]
+		不管你加不加入。
+		我再也不会让你阻挡我了。
+		
+		[MADELINE left sadder]
+		{+GRANNY} 需要我。
+		
+		[BADELINE right simple_sigh]
+		好吧。
+		祝你好运。
+
+	CH9_CATCH_THE_BIRD=
+		[MADELINE left surprised]
+		总算抓到你了！
+		
+		[MADELINE left angry]
+		{+GRANNY} 在哪！？
+		
+		{trigger 0 bird looks hurt}
+		
+		[MADELINE left angry]
+		...
+		
+		[MADELINE left surprised]
+		哦，不。
+		你还好吗？
+		
+		{trigger 1 bird squaks}
+		
+		[MADELINE left sad]
+		对不起，我不是有意伤害你的。
+		
+		{trigger 2 approach bird，it moves away}
+		
+		[MADELINE left sad]
+		等等！请不要离开。
+		
+		{trigger 3 bird flys out of the camera}
+		
+		[MADELINE left sadder]
+		至少告诉我...
+		你是 {+PART_OF_GRANNY}，对吗？
+		如果你不得不走，那么...
+		
+		[MADELINE left sad]
+		带我一起走。
+		
+		{trigger 4 badeline appears}
+		
+		[BADELINE right yell]
+		{+MADELINE}，停下！
+		
+		[BADELINE right concerned]
+		你不能跟她走。
+		
+		[MADELINE left angry]
+		住口！
+		你不能逼我放弃 {+MOUNTAIN}。
+		而且你也不能逼我放弃 {+GRANNY}。
+		
+		[MADELINE left sadder]
+		{*}走开。{/*}
+		
+		[BADELINE right concerned]
+		...
+		
+		[BADELINE right worried]
+		我不是在逼你。
+		
+		[BADELINE right concerned]
+		我是在求你。
+		
+		{trigger 5 Wait a beat}
+		
+		[BADELINE right worriedAlt]
+		我也很想念 {+GRANNY}。
+		她对我们两个都很重要。
+		
+		[MADELINE left sad]
+		那你为什么可以那么轻易地忘掉她？
+		
+		[BADELINE right worriedAlt]
+		那并{~}不{/~}容易。
+		
+		[BADELINE right worried]
+		为了让我们从这件事中走出来，也许我有点操之过急了...
+		
+		[BADELINE right concerned]
+		但现在也不是回事。
+		我只是希望我们能挺过去。
+		
+		{trigger 6 Madeline sits}
+		
+		[MADELINE left sadder flip]
+		...
+		我知道她不在了，
+		而这只是一个梦。
+		抓住这只鸟并不能让她回来。
+		
+		{trigger 7 badeline hugs madeline}
+		
+		[BADELINE left concerned]
+		对不起，{+MADELINE}。
+		
+		[BADELINE left concerned]
+		振作起来，让我们一起面对。
+		
+		[MADELINE right sadder]
+		...
+		
+		[MADELINE right distracted]
+		不。
+		
+		[MADELINE right sad]
+		现在还不行。
+		
+		{trigger 8 stand up}
+		
+		[MADELINE right sad]
+		我要先弥补我犯的错。
+		
+		[BADELINE left upset]
+		什么意思？
+		
+		[MADELINE right sad]
+		那只鸟，它是因为我才被困住的。
+		
+		{trigger 9 shift camera over to the bird}
+		
+		[MADELINE right sad flip]
+		在离开之前，我们要帮它逃脱。
+		{+GRANNY} 肯定不希望它像这样被困住。
+		
+		[BADELINE left concerned]
+		你说得对。
+		
+		[BADELINE left normal]
+		动手吧。
+		
+		[BADELINE left upset]
+		一旦做完这件事，{n}我们需要立刻醒来。
+		
+		[BADELINE left worried]
+		这个地方太{*}诡异{/*}了。{n}我想回家。
+
+	CH9_LAST_ROOM=
+		[BADELINE right normal]
+		就是这样！我们就快出去了。
+		
+		[MADELINE left determined]
+		加油，为了 {+GRANNY}。
+
+	CH9_LAST_ROOM_ALT=
+		[BADELINE right concerned]
+		你还好吗，{+MADELINE}？
+		
+		[MADELINE left sad]
+		就差一点点，但感觉不可能成功...
+		
+		[BADELINE right upset]
+		来吧，再多试几次。
+		
+		[BADELINE right normal]
+		我们能行的。
+
+	CH9_LAST_BOOST=
+		[BADELINE right normal]
+		帮我跟她道个别。
+
+	CH9_FAREWELL=
+		[MADELINE left normal]
+		{+GRANNY}！
+		
+		[GRANNY right normal]
+		嗨，孩子。
+		
+		[MADELINE left normal]
+		看见你太好了。
+		没有你，我不知道该怎么办。
+		
+		[MADELINE left sad]
+		...
+		但你不是真的...
+		
+		[MADELINE left sadder]
+		这只是一个梦。
+		
+		[GRANNY right normal]
+		那又怎么样？
+		你还是历尽艰辛地找来了。
+		你终于找到我了，而{~}现在{/~}{n}你还在意这只是一个梦？
+		
+		[GRANNY right mock]
+		别再找借口了，{n}说出你想要说的话吧。
+		
+		[MADELINE left sad]
+		...
+		
+		[MADELINE left distracted]
+		对不起，我没有出席你的葬礼。
+		
+		[MADELINE left sadder]
+		我做不到...那时候我谁也不想见。
+		
+		{silent_trigger 0 laugh}
+		
+		[GRANNY right laugh]
+		嘿，听起来很熟悉。
+		
+		[MADELINE left upset]
+		...
+		
+		{silent_trigger 1 stop laughing}
+		
+		[GRANNY right normal]
+		哈，我会在意谁出席了我的葬礼吗？
+		
+		{silent_trigger 0 laugh}
+		
+		[GRANNY right laugh]
+		我都已经翘辫子了！
+		
+		{silent_trigger 1 stop laughing}
+		
+		[GRANNY right mock]
+		葬礼是为你们{n}这些还活着的笨蛋们举办的。
+		
+		{trigger 2 take a step forward}
+		
+		[MADELINE left normal]
+		谢谢你在 {+MOUNTAIN} 上照看我。
+		
+		[MADELINE left distracted]
+		你帮了我那么多，...
+		
+		[MADELINE left sadder]
+		我真的好想你。
+		
+		{trigger 3 granny fades away}
+		
+		[MADELINE left sadder]
+		我现在该怎么办？
+		继续前进，当做什么也没有发生？
+		
+		{silent_trigger 4 fade to white}
+		
+		[MADELINE left panic]
+		当做你并没有...永远离开？
+
+	CH9_END_CINEMATIC=
+		{anchor bottom}
+		
+		[WEBCAM_THEO right excited]
+		她来了！
+		
+		[WEBCAM_THEO right normal]
+		好久不见，{# F94A4A}草莓{#}。
+		
+		[MADELINE left sad]
+		嗨，{+THEO}。
+		
+		[WEBCAM_THEO right normal]
+		感觉过了一百年那么久！
+		
+		[WEBCAM_THEO right thinking]
+		我一直在找你！{n}发生什么事了？
+		
+		[MADELINE left sad]
+		是的，抱歉没有回复你的消息...
+		
+		[MADELINE left distracted]
+		...或接你的电话...
+		...
+		...或回复你的电子邮件。
+		
+		[MADELINE left sad]
+		{+GRANNY} 去世的时候，我整个人都感觉要崩溃了。
+		
+		[MADELINE left distracted]
+		然后，我感觉给你发消息怪怪的。
+		我以为你会{n}因为我消失而生我的气。
+		
+		[MADELINE left sad]
+		就这样一直拖到现在。
+		
+		[WEBCAM_THEO right thinking]
+		哦哦，我了解你。
+		
+		[WEBCAM_THEO right normal]
+		我就猜可能是{n}葬礼的事，没关系的。
+		
+		[WEBCAM_THEO right thinking]
+		如果有下次，{~}至少{/~}告诉我你还活着。
+		
+		[WEBCAM_THEO right normal]
+		你感觉好些了吗？
+		
+		[MADELINE left sad]
+		是的...
+		
+		[MADELINE left distracted]
+		我终于开始接受这件事了。
+		
+		[MADELINE left sad]
+		我第一次遇到 {+GRANNY} 的时候，{n}我觉得她是个疯婆子。
+		
+		[MADELINE left distracted]
+		但后来我越来越了解她...
+		
+		[MADELINE left upset]
+		...我觉得她很刻薄。
+		
+		[MADELINE left sad]
+		但她知道我需要听什么，{n}而且她真的帮了我很多。
+		
+		[MADELINE left sadder]
+		我很想她。
+		
+		[WEBCAM_THEO right normal]
+		是的，我也是。
+		
+		[WEBCAM_THEO right thinking]
+		我真的以为她会永远活着。
+		
+		[WEBCAM_THEO right excited]
+		哦！这提醒我了！{n}我要让你看点东西。
+		
+		[MADELINE left normal]
+		哦？
+		
+		[WEBCAM_THEO right excited]
+		记得我告诉过你，我爷爷年轻的时候{n}去过{+CELESTE_MOUNTAIN}吗？
+		
+		[WEBCAM_THEO right normal]
+		那天，{n}我在和{+ALEX}一起翻他的一些旧东西...
+		看看我找到的这张照片。
+		
+		{trigger 0 Shows the photo of Theo's grandpa with Granny at Celeste Mountain.}
+		
+		[MADELINE left surprised]
+		那是 {+GRANNY}！？和你爷爷在一起？
+		
+		[MADELINE left normal]
+		{+THEO}，太让人吃惊了！
+		看上去他们是好朋友。
+		
+		[WEBCAM_THEO right excited]
+		就像我们一样！
+		
+		[WEBCAM_THEO right thinking]
+		他们都不在了，真令人难过。
+		
+		[WEBCAM_THEO right normal]
+		但现在知道我们{n}和他们都曾爬过 {+MOUNTAIN}，这感觉挺不错的。
+		
+		[MADELINE left normal]
+		是的...
+		
+		[MADELINE left peaceful]
+		{>> 0.3}确{~}实{/~}不错。{>>}
+
+
+# Crystal Hearts
+	POEM_FW=虚空
+
+# Wavedash Tutorial
+	WAVEDASH_DESKTOP_MYPC=我的大山
+	WAVEDASH_DESKTOP_POWERPOINT=wavedash.ppt
+	WAVEDASH_DESKTOP_RECYCLEBIN=回收站
+	WAVEDASH_DESKTOP_STARTBUTTON=BerryOS
+	WAVEDASH_PAGE1_TITLE=凌波微步和你
+	WAVEDASH_PAGE1_SUBTITLE=空中抓鸟的实用方法
+	WAVEDASH_PAGE2_TITLE=抓|不|到|那只鸟？
+	WAVEDASH_PAGE2_LIST=
+		-事实：鸟很难抓{n}
+		-哇哦。它很快！{n}
+		-它还会飞{n}
+		-而 {+PART_OF_YOU} 不动手帮忙{n}
+		-（她最坏了）
+
+	WAVEDASH_PAGE2_IMPOSSIBLE=不可能完成的任务？？？
+	WAVEDASH_PAGE3_TITLE=介绍...凌波微步！！
+	WAVEDASH_PAGE3_INFO=凌波微步可以让您跳得很远{n}，同时重新获得突进{~}能力！{/~}
+	WAVEDASH_PAGE3_EASY=这很“简单”！
+	WAVEDASH_PAGE4_TITLE=操作方法
+	WAVEDASH_PAGE4_LIST=
+		-跳跃{n}
+		-斜着向地面突进{n}
+		-立即再次跳跃并按住前进{n}
+		-{~}成功了！{/~}{n}
+		-（走你）
+
+	WAVEDASH_PAGE5_TITLE=天堂中的麻烦？
+	WAVEDASH_PAGE5_INFO1={#ff0000}如果没有重新获得突进能力{#}{n}，那就是您开始的时候离地面{~}太近{/~}了。
+	WAVEDASH_PAGE5_INFO2={#ff0000}如果没能跳得很远{#}{n}，那就是您开始的时候离地面{~}太远{/~}了。
+	WAVEDASH_PAGE6_TITLE=凌波微步，快乐的舞步！
+</pre>
